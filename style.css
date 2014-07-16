@@ -225,8 +225,8 @@ button:active,#search input[type='submit']:active,.wiki-page .wiki-page-content 
 .listing-page .tabmenu li a[href*="/promoted"],/* Self-serve advertising */
 .listing-page .tabmenu li a[href*="/gilded"] /* gilded */ { display:none;}
 
-/* HEADER SCORE BOARD */
-#header-bottom-left::before{position:absolute;top:18px;left:50%;margin-left:-126px;height:106px;color:#FFF;content:"0 0";margin-top:19px;font-size:60px;letter-spacing:83px;display:block;width:400px;-webkit-animation:fadeIn 500ms 1;-moz-animation:fadeIn 500ms 1;animation:flipInX 500ms 1;text-shadow:0 2px 2px rgba(0,0,0,1);}
+/* HEADER GAME DATE AND TIME ANNOUNCEMENT */
+#header-bottom-left::before { position:absolute;top:42px;left:50%;margin-left:-438px;height:106px;color:#FFF;content: "Thu, Aug 7 @ Kansas City - 8:00PM ET";margin-top:19px;font-size:16px;width:500px;-webkit-animation:fadeIn 500ms 1;-moz-animation:fadeIn 500ms 1;animation:flipInX 500ms 1;text-shadow:0 2px 2px rgba(0,0,0,1); }
 
 /* Big ol' B - BENGALS LOGO (For searching) */
 .listing-page #header-bottom-left::after { position:absolute;top:18px;left:50%;margin-left:-78px;width:150px;height:106px;background:url(%%blogo%%);content:" ";text-indent:-9999px;-webkit-animation:tada 1s 1;-moz-animation:tada 1s 1;animation:tada 1s 1;}
