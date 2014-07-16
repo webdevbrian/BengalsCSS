@@ -1,0 +1,751 @@
+/*==================================================
+ SIDEBAR IMAGE
+===================================================*/
+.side                       { padding-right:-5px;background-image:url(%%vontaze-couch-new%%);/*change image here*/background-repeat:no-repeat;}
+.side .spacer:first-of-type { position:relative;}
+/*Text underneath: */
+.side .spacer:first-of-type:after { position:absolute;bottom:53px;/*move rest of sidebar and update text content first before positioning text here.*/width:296px;font-size:120%;left:0;text-align:center;color:#FFF;padding:2px;background:#000;opacity:.7;content:'Who Dey.';}
+
+/* Sidebar */
+.side{float:right;margin:50px 10px 0 0;padding-top:386px;/*SIDEBAR: CHANGE TO image height in pixels*/width:300px;text-align:left;font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;}
+
+/*==================================================
+ SIDEBAR TABLES
+===================================================*/
+.side .md table         { border-left:1px solid #ccc;border-right:1px solid #ccc;box-shadow:2px 2px 2px #ccc;margin-top:3px;margin-bottom:30px;width:95%;}
+/*Table Header */
+.side .md table th      { background-color:#171717;border-top:none;border-left:none;border-bottom:none;border-right:1px solid #ccc;color:#fafafa;font-size:90%;font-weight:700;padding:.5em;text-align:center;text-shadow:1px 1px 0 #111;}
+/*Table Body*/
+.side .md table td      { border-top:none;border-left:none;border-right:1px solid #ccc;padding:.2em;text-align:center;}
+.side .md table td a    { color:#20558a!important;}
+.side table tbody       { display:none;}
+.side table:hover tbody { display:table-row-group;}
+
+/*==================================================
+ FONT
+===================================================*/
+/*TEXT COLOURS*/
+
+/*Colored Text in Comments*/
+/*Orange*/
+.comment .md h1,.comment .md h2 { font-family:Helvetica, Arial, sans-serif;font-weight:700;font-size:16px;color:#FB4F14;font-family:arial,sans-serif;border:none!important;}
+/*Black*/
+.comment .md h3,.comment .md h3 { font-weight:700;font-size:16px;color:#000;font-family:arial,sans-serif;border:none!important;}
+
+/*Colored Text in Body of self posts */
+/*Orange*/
+.self .md h1,.self .md h2 { font-weight:700;font-size:16px;color:#FB4F14;font-family:arial,sans-serif;border:none!important;}
+/*Black*/
+.self .md h3,.self .md h3 { font-weight:700;font-size:16px;color:#000;font-family:arial,sans-serif;border:none!important;}
+
+/* Sidebar stuff from r/Episodehub */
+.titlebox                          { padding:-100px;background-color:#FFF;}
+.titlebox .bottom                  { border:0;}
+.titlebox form.toggle              { background-color:transparent;}
+.titlebox .usertext                { margin:15px 0;line-height:120%;font-size:50%;}
+.titlebox .usertext .md            { margin:0;padding:0;overflow:visible;}
+.titlebox .usertext .md h2         { font-size:.75em;font-weight:700;color:#FF4500;}
+.titlebox .usertext .md > h1       { border:0;margin:0;padding:0;background-color:#FB4F14;color:#FFF;padding:5px 10px;padding-left:20px;padding-right:0;margin-right:13px;margin-left:-18px;border-bottom:1px solid #C00;margin-bottom:5px;margin-top:10px;z-index:100;}
+.titlebox .usertext .md > h1:after { display:block;content:"";border-color:transparent #C00 transparent transparent;border-style:solid;border-width:15px;height:0;width:0;position:absolute;z-index:-1;margin-left:-35px;margin-top:-10px;}
+
+/*==================================================
+ FLAIRS
+===================================================*/
+.flair        { background:url(%%flair-sprite%%) no-repeat;width:20px;height:18px;border:none;bottom:-2px;top:-2px;padding:6px 0 0 8px;color:#FFF;font-family:Impact, sans-serif;font-size:10px;letter-spacing:1px;}
+.flair-black  { background-position:0 0;text-shadow:0 0 1px #fb4f14 0 0 1px #fb4f14 1px 1px 1px #fb4f14 1px 1px 1px #fb4f14;}
+.flair-orange { background-position:0 -23px;text-shadow:0 0 1px black, 0 0 1px black, 1px 1px 1px black, 1px 1px 1px #000;}
+.flair-white  { background-position:0 -46px;text-shadow:0 0 1px #fb4f14 0 0 1px #fb4f14 1px 1px 1px #fb4f14 1px 1px 1px #fb4f14;color:#000;}
+.flair-ARZ    { background-position:2px -71px;}
+.flair-ATL    { background-position:2px -92px;}
+.flair-BAL    { background-position:2px -112px;}
+.flair-BUF    { background-position:2px -132px;}
+.flair-CAR    { background-position:2px -152px;}
+.flair-CHI    { background-position:2px -170px;}
+.flair-CIN    { background-position:2px -190px;}
+.flair-CLE    { background-position:2px -211px;width:20px;height:17px;}
+.flair-DAL    { background-position:2px -232px;}
+.flair-DEN    { background-position:2px -253px;width:20px;height:17px;}
+.flair-DET    { background-position:2px -271px;}
+.flair-GB     { background-position:2px -291px;width:20px;height:17px;}
+.flair-HOU    { background-position:2px -311px;width:20px;height:16px;}
+.flair-IND    { background-position:2px -332px;width:20px;height:17px;}
+.flair-JAC    { background-position:2px -353px;width:20px;height:17px;}
+.flair-KC     { background-position:2px -371px;width:20px;height:17px;}
+.flair-MIA    { background-position:2px -391px;width:20px;height:17px;}
+.flair-MIN    { background-position:2px -411px;}
+.flair-NE     { background-position:2px -433px;width:20px;height:14px;}
+.flair-NO     { background-position:2px -451px;}
+.flair-NYG    { background-position:2px -473px;}
+.flair-NYJ    { background-position:2px -491px;width:20px;height:17px;}
+.flair-OAK    { background-position:2px -511px;}
+.flair-PHI    { background-position:2px -533px;width:20px;height:14px;}
+.flair-PIT    { background-position:2px -552px;width:20px;height:19px;}
+.flair-SD     { background-position:2px -574px;width:20px;height:16px;}
+.flair-SF     { background-position:2px -591px;}
+.flair-SEA    { background-position:2px -611px;}
+.flair-STL    { background-position:2px -630px;}
+.flair-TB     { background-position:2px -650px;}
+.flair-TEN    { background-position:2px -672px;width:20px;height:15px;}
+.flair-WAS    { background-position:2px -690px;width:20px;height:17px;}
+.flair-NFL    { background-position:2px -712px;width:20px;height:17px;}
+.flair-NFC    { background-position:2px -733px;width:20px;height:16px;}
+.flair-AFC    { background-position:2px -752px;width:20px;height:15px;}
+.flair-OIL    { background-position:2px -772px;}
+.flair-OON    { background-position:2px -793px;width:23px;height:17px;}
+.flair-RAV    { background-position:2px -819px;width:23px;height:15px;}
+.flair-DOG    { background-position:2px -839px;width:23px;height:15px;}
+.flair[title="0"],.flair[title="1"],.flair[title="2"],.flair[title="3"],.flair[title="4"],.flair[title="5"],.flair[title="6"],.flair[title="7"],.flair[title="8"],.flair[title="9"]{ padding-left:11px;margin-right:2px; }
+
+/* Team logos for use in comments */
+a[href="/black"]:nth-of-type(n):before,a[href$="/r/bengals"]:nth-of-type(n):before,a[href="/orange"]:nth-of-type(n):before,a[href$="/r/bengals"]:nth-of-type(n):before,a[href="/white"]:nth-of-type(n):before,a[href$="/r/bengals"]:nth-of-type(n):before,a[href="/ARI"]:nth-of-type(n):before,a[href$="/r/azcardinals"]:nth-of-type(n):before,a[href="/ATL"]:nth-of-type(n):before,a[href$="/r/falcons"]:nth-of-type(n):before,a[href="/BAL"]:nth-of-type(n):before,a[href$="/r/ravens"]:nth-of-type(n):before,a[href="/BUF"]:nth-of-type(n):before,a[href$="/r/buffalobills"]:nth-of-type(n):before,a[href="/CAR"]:nth-of-type(n):before,a[href$="/r/panthers"]:nth-of-type(n):before,a[href="/CHI"]:nth-of-type(n):before,a[href$="/r/chibears"]:nth-of-type(n):before,a[href="/CIN"]:nth-of-type(n):before,a[href$="/r/cinbengals"]:nth-of-type(n):before,a[href$="/r/bengals"]:nth-of-type(n):before,a[href="/CLE"]:nth-of-type(n):before,a[href$="/r/browns"]:nth-of-type(n):before,a[href="/DAL"]:nth-of-type(n):before,a[href$="/r/cowboys"]:nth-of-type(n):before,a[href="/DEN"]:nth-of-type(n):before,a[href$="denverbroncos"]:nth-of-type(n):before,a[href="/DET"]:nth-of-type(n):before,a[href$="/r/detroitlions"]:nth-of-type(n):before,a[href$="/GB"]:nth-of-type(n):before,a[href$="/r/greenbaypackers"]:nth-of-type(n):before,a[href="/HOU"]:nth-of-type(n):before,a[href$="/r/texans"]:nth-of-type(n):before,a[href="/IND"]:nth-of-type(n):before,a[href$="/r/colts"]:nth-of-type(n):before,a[href="/JAC"]:nth-of-type(n):before,a[href$="/r/jaguars"]:nth-of-type(n):before,a[href="/KC"]:nth-of-type(n):before,a[href$="/r/kansascitychiefs"]:nth-of-type(n):before,a[href="/MIA"]:nth-of-type(n):before,a[href$="miamidolphins"]:nth-of-type(n):before,a[href="/MIN"]:nth-of-type(n):before,a[href$="/r/minnesotavikings"]:nth-of-type(n):before,a[href="/NE"]:nth-of-type(n):before,a[href$="/r/patriots"]:nth-of-type(n):before,a[href="/NO"]:nth-of-type(n):before,a[href$="/r/saints"]:nth-of-type(n):before,a[href="/NYG"]:nth-of-type(n):before,a[href$="/r/nygiants"]:before,a[href="/NYJ"]:nth-of-type(n):before,a[href$="/r/nyjets"]:nth-of-type(n):before,a[href="/OAK"]:nth-of-type(n):before,a[href$="/r/oaklandraiders"]:nth-of-type(n):before,a[href="/PHI"]:nth-of-type(n):before,a[href$="/r/eagles"]:nth-of-type(n):before,a[href="/PIT"]:nth-of-type(n):before,a[href$="/r/steelers"]:nth-of-type(n):before,a[href="/SD"]:nth-of-type(n):before,a[href$="/r/chargers"]:nth-of-type(n):before,a[href="/SF"]:nth-of-type(n):before,a[href$="/r/49ers"]:nth-of-type(n):before,a[href="/SEA"]:nth-of-type(n):before,a[href$="/r/seahawks"]:nth-of-type(n):before,a[href="/STL"]:nth-of-type(n):before,a[href$="/r/stlouisrams"]:nth-of-type(n):before,a[href="/TB"]:nth-of-type(n):before,a[href$="/r/buccaneers"]:nth-of-type(n):before,a[href="/TEN"]:nth-of-type(n):before,a[href$="/r/tntitans"]:nth-of-type(n):before,a[href$="r/tennesseetitans"]:nth-of-type(n):before,a[href="/WAS"]:nth-of-type(n):before,a[href$="/r/redskins"]:nth-of-type(n):before,a[href="/NFL"]:nth-of-type(n):before,a[href="/NFC"]:nth-of-type(n):before,a[href="/AFC"]:nth-of-type(n):before,a[href="/OIL"]:nth-of-type(n):before,
+/*a[href="/RAV"]:nth-of-type(n):before,*/
+a[href="/OON"]:nth-of-type(n):before,a[href="/DOG"]:nth-of-type(n):before,a[href="/TRO"]:nth-of-type(n):before{width:26px;height:20px;display:inline-block;background-repeat:no-repeat;background-image:url(%%flair-sprite%%);background-position:-9999px -9999px;vertical-align:middle;margin-right:3px;content:"";}
+/* Fantasy Football Winner Flair *//* Not active, but kept in for reference. put the username after the author[href$="].... like href$="/pfftYeahRight" *//*
+.author:after {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 20px;
+    right: 0px;
+    bottom: -4px;
+    margin-right: 2px;
+    overflow: visible;
+    content: " ";
+    background-image: url(%%flair-sprite%%);
+    background-position:  2px -865px;
+    }*/
+
+/* USER FLAIR ***************************************************/
+/* [ARI] Arizona Cardinals */a[href="/ARI"]:before,a[href$="/r/azcardinals"]:before,.flair-cardinals                            { background-position:0 -71px!important;}
+/* [ATL] Atlanta Falcons */a[href="/ATL"]:before,a[href$="/r/falcons"]:before,.flair-falcons                                    { content:"";background-position:0 -92px!important;}
+/* [BAL] Baltimore Ravens */a[href="/BAL"]:before,a[href$="/r/ravens"]:before,.flair-ravens                                     { content:"";background-position:0 -112px!important;}
+/* [BUF] Buffalo Bills */a[href="/BUF"]:before,a[href$="/r/buffalobills"]:before,.flair-bills                                   { content:"";background-position:0 -132px!important;}
+/* [CAR] Carolina Panthers */a[href="/CAR"]:before,a[href$="/r/panthers"]:before,.flair-panthers                                { background-position:0 -152px!important;}
+/* [CHI] Chicago Bears */a[href="/CHI"]:before,a[href$="/r/chibears"]:before,.flair-bears                                       { background-position:0 -172px!important;}
+/* [CIN] Cincinnati Bengals */a[href="/CIN"]:before,a[href$="/r/cinbengals"]:before,a[href$="/r/bengals"]:before,.flair-bengals { background-position:0 -192px!important;}
+/* [CLE] Cleveland Browns */a[href="/CLE"]:before,a[href$="/r/browns"]:before,.flair-browns                                     { background-position:0 -212px!important;}
+/* [DAL] Dallas Cowboys */a[href="/DAL"]:before,a[href$="/r/cowboys"]:before,.flair-cowboys                                     { background-position:0 -232px!important;}
+/* [DEN] Denver Broncos */a[href="/DEN"]:before,a[href$="/r/denverbroncos"]:before,.flair-broncos                               { background-position:0 -253px!important;}
+/* [DET] Detroit Lions */a[href="/DET"]:before,a[href$="/r/detroitlions"]:before,.flair-lions                                   { background-position:0 -273px!important;}
+/* [GB] Green Bay Packers */a[href="/GB"]:before,a[href$="/r/greenbaypackers"]:before,.flair-packers                            { background-position:0 -293px!important;}
+/* [HOU] Houston Texans */a[href="/HOU"]:before,a[href$="/r/texans"]:before,.flair-texans                                       { background-position:0 -313px!important;}
+/* [IND] Indianoplis Colts */a[href="/IND"]:before,a[href$="/r/colts"]:before,.flair-colts                                      { background-position:0 -333px!important;}
+/* [JAC] Jacksonville Jaguars */a[href="/JAC"]:before,a[href$="/r/jaguars"]:before,.flair-jaguars                               { background-position:0 -353px!important;}
+/* [KC] Kansas City Chiefs */a[href="/KC"]:before,a[href$="/r/kansascitychiefs"]:before,.flair-chiefs                           { background-position:0 -373px!important;}
+/* [MIA] Miami Dolphins */a[href="/MIA"]:before,a[href$="/r/miamidolphins"]:before,.flair-dolphins                              { background-position:0 -393px!important;}
+/* [MIN] Minnesota Vikings */a[href="/MIN"]:before,a[href$="/r/minnesotavikings"]:before,.flair-vikings                         { background-position:0 -413px!important;}
+/* [NE] New England Patriots */a[href="/NE"]:before,a[href$="/r/patriots"]:before,.flair-patriots                               { background-position:0 -433px!important;}
+/* [NO] New Orleans Saints */a[href="/NO"]:before,a[href$="/r/saints"]:before,.flair-saints                                     { background-position:0 -453px!important;}
+/* [NYG] New York Giants */a[href="/NYG"]:before,a[href$="/r/nygiants"]:before,.flair-giants                                    { background-position:0 -472px!important;}
+/* [NYJ] New York Jets */a[href="/NYJ"]:before,a[href$="/r/nyjets"]:before,.flair-jets                                          { background-position:0 -492px!important;}
+/* [OAK] Oakland Raiders */a[href="/OAK"]:before,a[href$="/r/oaklandraiders"]:before,.flair-raiders                             { background-position:0 -512px!important;}
+/* [PHI] Philadelphia Eagles */a[href="/PHI"]:before,a[href$="/r/eagles"]:before,.flair-eagles                                  { background-position:0 -532px!important;}
+/* [PIT] Pittsburgh Steelers */a[href="/PIT"]:before,a[href$="/r/steelers"]:before,.flair-steelers                              { background-position:0 -552px!important;}
+/* [SD] San Diego Chargers*/a[href="/SD"]:before,a[href$="/r/chargers"]:before,.flair-chargers                                  { background-position:0 -572px!important;}
+/* [SF] San Francisco 49ers */a[href="/SF"]:before,a[href$="/r/49ers"]:before,.flair-fortyniners                                { background-position:0 -592px!important;}
+/* [SEA] Seattle Seahawks */a[href="/SEA"]:before,a[href$="/r/seahawks"]:before,.flair-seahawks                                 { background-position:0 -612px!important;}
+/* [STL] St. Louis Rams */a[href="/STL"]:before,a[href$="/r/stlouisrams"]:before,.flair-rams                                    { background-position:0 -632px!important;}
+/* [TB] Tampa Bay Buccaneers */a[href="/TB"]:before,a[href$="/r/buccaneers"]:before,.flair-buccaneers                           { background-position:0 -652px!important;}
+/* [TEN] Tennessee Titans */a[href="/TEN"]:before,a[href$="/r/tntitans"]:before,a[href$="/r/tennesseetitans"]:before,.flair-titans { background-position:0 -672px!important;}
+/* [WAS] Washington Redskins */a[href="/WAS"]:before,a[href$="/r/redskins"]:before,.flair-redskins{ background-position:0 -692px!important; }
+/* [NFL] National Football League*/a[href="/NFL"]:before,.flair-nfl      { background-position:0 -712px!important;}
+/* [NFC] National Football Conference */a[href="/NFC"]:before,.flair-nfc { background-position:0 -732px!important;}
+/* [AFC] American Football Conference */a[href="/AFC"]:before,.flair-afc { background-position:0 -752px!important;}
+/* [OIL] Houston Oilers */a[href="/OIL"]:before,.flair-oilers            { background-position:0 -772px!important;}
+/*[OON] Balloon*/a[href="/oon"]:before,.flair-balloon                    { background-position:0 -793px!important;}
+/*[RAV] Ravens*//*
+a[href="/RAV"]:before, .flair-ravens{
+    background-position: 0 -819px !important
+}*/
+/*[DOG] Dog*/a[href="/DOG"]:before,.flair-dog{background-position:0 -839px!important;}
+/*[TRO] Trophy*/
+/*
+a[href="/TRO"]:before, .flair-trophy{
+    background-position: 0 -839px !important
+}*/
+/*[BLACK] Black*/a[href="/black"]:before,.flair-black      { background-position:0 0!important;}
+/*[ORANGE] Orange */a[href="/orange"]:before,.flair-orange { background-position:0 -23px!important;}
+/*[WHITE] White*/a[href="/white"]:before,.flair-white      { background-position:0 -46px!important;}
+
+/*For winning commenter of the year*/
+/*make href$= username*/
+a.author[href$="" ] { color:orange;/* whatever color you want their user name to be */background-color:#000;/* whatever color you want the highlight to be */font-weight:700;border-radius:3px;padding:0 2px;}
+
+body { min-width:940px;background-color:#f1f1f1;color:#3b3b3b;font-family:arial, sans-serif;}
+/* Custom browser CSS */
+:focus                     { outline:0;}
+::-webkit-scrollbar        { width:12px;height:12px;background-color:#f5f5f5;border-left:1px solid #d2d2d2;}
+::-webkit-scrollbar-thumb  { background-color:#c3c3c3;border-top:1px solid #b6b6b6;border-bottom:1px solid #969696;border-left:1px solid #b6b6b6;}
+::-webkit-scrollbar-button { display:none;width:0;height:0;}
+::-webkit-scrollbar-corner { background-color:transparent;color:#555;}
+::selection                { background-color:#FB4F14;color:#FFF;font-weight:700;}
+
+/* Link */
+a                               { color:#FB4F14;}
+a:hover                         { text-decoration:underline;}
+.error                          { color:#f44;font-size:13px;font-family:arial, sans-serif;}
+.comments-page #noresults:after { content:"... so go ahead and tell us what you think!";}
+
+/* General Button*/
+button,#search input[type='submit'],.wiki-page .wiki-page-content .wiki_button                      { margin:3px;padding:0 8px 1px;background-color:#fff;border:1px solid #d4d4d4;border-radius:2px;-webkit-box-shadow:0 1px 0 #e2e0e0;box-shadow:0 1px 0 #e2e0e0;color:#737373!important;text-transform:capitalize;font-weight:700;line-height:26px;cursor:default;}
+button:hover,#search input[type='submit']:hover,.wiki-page .wiki-page-content .wiki_button:hover    { padding-bottom:0;border-color:#bababa;border-bottom-width:2px;color:#333!important;}
+button:active,#search input[type='submit']:active,.wiki-page .wiki-page-content .wiki_button:active { padding-bottom:0;background-color:#e5e5e5;border-color:#a7a7a7;border-top-width:2px;border-bottom-width:1px;-webkit-box-shadow:none;box-shadow:none;color:#333!important;line-height:25px;}
+
+/* Header Area */
+/* Top Most header */
+#sr-header-area                                                    { opacity:0.4;height:18px;background-color:#333;border-bottom:1px solid #333;}
+#sr-header-area:hover                                              { opacity:90;z-index:100;}
+#sr-header-area a                                                  { color:#C4C4C4;font-family:Verdana, Arial, sans-serif;}
+#sr-header-area a:hover                                            { color:#FB4F14;text-decoration:none;}
+#sr-more-link                                                      { position:absolute;background-color:#333;color:#C4C4C4;}
+.dropdown.srdrop .selected                                         { background-image:none;}
+.dropdown.srdrop .selected:after                                   { content:"▼";}
+.sr-bar .separator                                                 { color:#333;}
+#sr-header-area .width-clip .dropdown.srdrop .selected.title       { color:#C4C4C4;font-size:9px;font-weight:400;font-family:Verdana, Arial, sans-serif;padding-right:3px;}
+#sr-header-area .width-clip .dropdown.srdrop .selected.title:hover { color:#FB4F14;}
+#sr-header-area .drop-choices a.choice                             { color:#333!important;}
+#sr-header-area .drop-choices a.choice:hover                       { background-color:#FB4F14;color:#fff!important;}
+
+#header           { height:131px;background:#2a2b2e url(%%2014header%%) top center;border-bottom:0 solid;}
+#header:after     { position:absolute;top:131px;left:0;z-index:-1;width:100%;height:45px;background:url(%%btm-bar%%) top repeat;border-bottom:0 solid;content:" ";text-indent:-9999px;}
+#header-img       { position:absolute;margin-top:1px;margin-right:0;margin-left:1px;top:131px;left:0;z-index:99;width:44px;height:44px;background-image:url(%%spritesheet%%);background-position:0 -226px;background-repeat:no-repeat;}
+#header-img:hover { background-position:-44px -226px;}
+.pagename         { visibility:hidden;}
+
+/* HOT / NEW / ETC */
+#header .tabmenu                                          { display:block;position:absolute;top:131px;margin:0;right:0;left:200px;padding:0;height:44px;background-color:transparent;border-bottom:0 solid;color:#999;list-style-type:none;vertical-align:bottom;text-align:center;white-space:nowrap;font-weight:400;font-size:15px;font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;min-width:450px;}
+.tabmenu li                                               { display:inline-block;margin:7px 0 0;}
+.tabmenu li a                                             { margin:0 17px;padding:8px;background-color:transparent;border:0 solid;color:#999;font-weight:400;font-size:18px;font-family:Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;}
+.tabmenu li.selected a                                    { z-index:100;background-color:transparent;border:0 solid;color:#FF4500;font-size:22px;font-family:Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;}
+.tabmenu li a:hover                                       { text-decoration:none;background:#333;}
+.tabmenu li.selected a:hover                              { border-color:#FB4F14;}
+.res #header .tabmenu                                     { text-align:left;margin-left:55px;}
+.listing-page .tabmenu li:nth-of-type(3),/* Rising */
+.listing-page .tabmenu li:nth-of-type(4),/* Controversial */
+.listing-page .tabmenu li a[href*="/promoted"],/* Self-serve advertising */
+.listing-page .tabmenu li a[href*="/gilded"] /* gilded */ { display:none;}
+
+/* HEADER SCORE BOARD */
+#header-bottom-left::before{position:absolute;top:18px;left:50%;margin-left:-126px;height:106px;color:#FFF;content:"0 0";margin-top:19px;font-size:60px;letter-spacing:83px;display:block;width:400px;-webkit-animation:fadeIn 500ms 1;-moz-animation:fadeIn 500ms 1;animation:flipInX 500ms 1;text-shadow:0 2px 2px rgba(0,0,0,1);}
+
+/* Big ol' B - BENGALS LOGO (For searching) */
+.listing-page #header-bottom-left::after { position:absolute;top:18px;left:50%;margin-left:-78px;width:150px;height:106px;background:url(%%blogo%%);content:" ";text-indent:-9999px;-webkit-animation:tada 1s 1;-moz-animation:tada 1s 1;animation:tada 1s 1;}
+#header-bottom-left::after               { position:absolute;top:18px;left:50%;margin-left:-78px;width:150px;height:106px;background:url(%%blogo%%);content:" ";text-indent:-9999px;}
+.single-page,.listing-page               { -webkit-animation:fadeIn 500ms 1;-moz-animation:fadeIn 500ms 1;animation:fadeIn 500ms 1;}
+
+/* User bar */
+#header-bottom-right         { position:absolute!important;top:86px!important;right:10px!important;padding:8px 15px 20px!important;height:12px!important;background-color:#000!important;}
+.user                        { color:#7A7A7A;}
+.loggedin .user              { color:#7A7A7A;}
+#header-bottom-right a       { color:#f60;font-weight:400;font-size:15px;}
+#header-bottom-right a:hover { color:#f60;text-decoration:none;}
+
+/* Mail / Modmail icons */
+#mail                                          { top:0;overflow:visible;width:16px;height:16px;background-image:url(%%spritesheet%%)!important;}
+#mail:hover,#modmail:hover                     { border-bottom:0 solid!important;}
+#mail.nohavemail                               { background-position:-64px 0;}
+#mail.havemail                                 { background-position:-80px 0;}
+#mail.havemail:before,#modmail.havemail:before { display:block;visibility:visible!important;position:fixed;top:4px;right:10px;z-index:2;z-index:0;width:25px;height:25px;background-color:#fff;background-image:url(%%spritesheet%%);background-position:-126px -50px;border-radius:50%;content:" ";}
+#modmail                                       { top:-2px;margin-bottom:-6px;width:16px;height:16px;background-image:url(%%spritesheet%%)!important;}
+#modmail.havemail                              { background-position:-112px 0;}
+#modmail.nohavemail                            { background-position:-96px 0;}
+#modmail.havemail:before                       { background-position:-151px -50px;margin-right:40px;}
+
+/* Preferences & Logout Icons */
+#header-bottom-right a.pref-lang,.loggedin .logout a { background-position:-96px -49px;background-image:url(%%spritesheet%%);width:16px;height:16px;display:inline-block;text-indent:-9999px;margin:0;position:relative;top:-2px;}
+.loggedin .logout a                                  { background-position:-80px -49px;}
+.gearIcon                                            { background-image:url(%%spritesheet%%)!important;background-position:-80px -65px!important;height:16px!important;width:17px!important;}
+
+/* Opacity Hoves */
+#modmail,#mail,.gearIcon,#header-bottom-right a.pref-lang,.loggedin .logout a{opacity:0.75;}
+#modmail:hover,#mail:hover,#header-bottom-right a.pref-lang:hover,.loggedin .logout a:hover,.gearIcon:hover{opacity:1;text-decoration:none!important;border-bottom:0 solid!important;}
+
+/* SUBMIT LINK OR POST */
+.morelink                                            { z-index:97;width:270px;height:28px;background-color:#FB4F14;background-image:none!important;border:none;border-top:2px solid #FB4F14;border-bottom:3px solid #FB4F14;border-radius:1px;-webkit-box-shadow:0 1px 2px #CECECE;box-shadow:0 1px 2px #CECECE;margin-left:15px;}
+.morelink:hover                                      { background-color:#171717;border-top:2px solid #171717;border-bottom:3px solid #FB4F14;}
+.morelink:active                                     { background-color:#FB4F14;border-top:2px solid #21365F;border-bottom:3px solid #FB4F14;-webkit-box-shadow:none;box-shadow:none;}
+.morelink a                                          { color:#fff!important;text-shadow:0 1px 0 #5787e1;letter-spacing:0;font-weight:700;font-size:15px;font-family:arial, sans-serif;cursor:default;line-height:30px;}
+.morelink a:hover                                    { text-decoration:none;}
+.subscriber .morelink a:after                        { position:fixed;top:4px;right:30px;z-index:98;background-color:#FB4F14;color:#FFF;content:"Submit Content";padding:0 12px;}
+.disabled .morelink,.disabled .morelink:hover        { background-image:none;border:0 solid;color:#FFF;font-size:0;background-color:#c8c8c8;margin-top:3px;text-shadow:none;box-shadow:none;}
+.disabled .morelink a                                { color:#fff;letter-spacing:0;font-weight:600;font-size:14px;font-family:sans-serif;cursor:default;text-indent:0;text-shadow:none;}
+.account-activity-box,.sidebox.create,.morelink .nub { display:none;}
+
+/* Subreddit name sidebar */
+.titlebox h1 a       { display:none;}
+.titlebox h1 a:hover { color:#FB4F14;text-decoration:none;}
+.sidebox .subtitle   { font-size:1.6em;}
+
+/* Sub / Unsub button */
+.fancy-toggle-button .active{padding:1px 8px;background-image:none!important;outline:none!important;border:0;border-radius:2px;color:#fff!important;text-transform:capitalize;font-weight:700;font-size:12px;font-family:arial, sans-serif!important;line-height:26px;cursor:default;}
+
+/* Sub */
+.fancy-toggle-button .add        { background-color:#FB4F14;border-top:2px solid #FB4F14;border-bottom:2px solid #FB4F14;-webkit-box-shadow:0 1px 0 #e2e0e0;box-shadow:0 1px 0 #e2e0e0;}
+.fancy-toggle-button .add:hover  { background-color:#6599fa;border-top:2px solid #6599fa;border-bottom:2px solid #FB4F14;-webkit-box-shadow:none;box-shadow:none;text-decoration:none;}
+.fancy-toggle-button .add:active { background-color:#FB4F14;border-top:2px solid #21407a;border-bottom:2px solid #FB4F14;-webkit-box-shadow:none;box-shadow:none;}
+
+/* Unsub *//* Unsub */
+.fancy-toggle-button .remove        { background-color:#fff;border:1px solid #d4d4d4;-webkit-box-shadow:0 1px 0 #e2e0e0;box-shadow:0 1px 0 #e2e0e0;font-size:10px;line-height:16px;color:#737373!important;cursor:pointer;}
+.fancy-toggle-button .remove:hover  { background-color:#fff;color:#333;border-bottom-width:2px;border-color:#bababa;text-decoration:none;}
+.fancy-toggle-button .remove:active { background-color:#e5e5e5;border-color:#a7a7a7;border-top-width:2px;color:#333;}
+
+/* Sub notice */
+.fancy-toggle-button .add:after       { position:fixed;top:4px;right:25px;z-index:98;background-color:#FB4F14;color:#FFF;content:"Subscribe Now";padding:0 16px;}
+.fancy-toggle-button .add:hover:after { background-color:#171717;border-bottom:3px solid #FB4F14;height:23px;}
+
+/*Replace readers.. */
+div.titlebox span.word                    { display:none;}
+.titlebox .users-online                   { display:inline;}
+.titlebox .users-online:before            { display:none;}
+.titlebox .users-online .number           { font-style:italic;font-size:12px;}
+.titlebox .users-online .number:before    { content:"(";}
+.titlebox .users-online .number:after     { content:" here)";}
+.titlelebox .word                         { display:none;}
+.titlebox .users-online,.titlebox .number { cursor:text;}
+.titlebox .tagline                        { font-size:12px;}
+
+/* Subreddit description */
+.titlebox         { padding:0 15px 15px;color:#404040;}
+.titlebox .md     { font-size:12px;line-height:1.35em;font-family:arial, sans-serif;}
+.titlebox .bottom { padding-top:5px;border-top:1px solid #e5e5e5;color:#999;font-size:110%;}
+
+/* Search */
+#search                        { }
+#search input[type=text]       { margin:17px 0 0;padding:5px 0 5px 40px;width:258px;background-image:url(%%spritesheet%%);background-position:-129px 0;background-repeat:no-repeat;border:none;border-top:1px solid #d5d5d5;border-bottom:1px solid #d5d5d5;border-left:2px solid #fff;color:#999;font-weight:400;font-size:16px;font-family:arial, sans-serif!important;}
+#search input[type=text]:focus { padding:5px 0 5px 40px;width:258px;outline:none!important;border:none;border-top:1px solid #d5d5d5;border-bottom:1px solid #d5d5d5;border-left:2px solid #4285f4;color:#000;}
+#searchexpando                 { margin:0 0 5px;padding:5px 5px 0 15px;height:25px;background-color:#f5f5f5;border:0 solid;border-bottom:1px solid #DFDFDF;border-radius:0;color:#3b3b3b;font-size:150%;}
+#searchexpando label           { cursor:pointer;}
+.search-page form#search label { font-size:150%;cursor:pointer;}
+#search_showmore               { display:none;}
+
+/* Ad Frame */
+#ad-frame,#ad_main { text-align:center; }
+
+/* Sidebar mod box */
+.sidecontentbox                    { padding:0 5px 0 15px;}
+.sidecontentbox .title             { text-align:left;}
+.sidecontentbox .title h1          { color:#262626;text-align:left;text-transform:capitalize;font-size:14px;font-family:arial, sans-serif;}
+.sidecontentbox.collapsible .title { text-align:left;}
+.sidecontentbox .collapse-button   { background:transparent;border:0;border-radius:0;color:#262626;font-size:15px;}
+.sidecontentbox .content           { padding:3px 0 5px;background-color:transparent;border:0 solid;text-align:left;}
+.sidecontentbox .content a         { color:#262626;text-align:left;font-family:arial, sans-serif;}
+.sidecontentbox .content a:hover   { color:#FB4F14;text-decoration:underline;}
+
+/* Mod icons */
+.icon-menu a                            { background-color:transparent;}
+.icon-menu .reddit-edit:before          { background-image:url(%%spritesheet%%);background-position:0 -33px;}
+.icon-menu .moderator-mail:before       { margin-top:-1px;height:16px;background-image:url(%%spritesheet%%);background-position:-16px -32px;}
+.icon-menu .reddit-moderators:before    { background-image:url(%%spritesheet%%);background-position:-32px -33px;}
+.icon-menu .reddit-contributors:before  { background-image:url(%%spritesheet%%);background-position:-48px -33px;}
+.icon-menu .reddit-traffic:before       { background-image:url(%%spritesheet%%);background-position:-64px -32px;}
+.icon-menu .reddit-modqueue:before      { background-image:url(%%spritesheet%%);background-position:-80px -32px;}
+.icon-menu .reddit-reported:before      { background-image:url(%%spritesheet%%);background-position:-96px -32px;}
+.icon-menu .reddit-spam:before          { background-image:url(%%spritesheet%%);background-position:-112px -32px;}
+.icon-menu .reddit-ban:before           { background-image:url(%%spritesheet%%);background-position:-128px -32px;}
+.icon-menu .reddit-flair:before         { background-image:url(%%spritesheet%%);background-position:-144px -32px;}
+.icon-menu .reddit-moderationlog:before { background-image:url(%%spritesheet%%);background-position:-160px -33px;}
+.icon-menu a.reddit-unmoderated         { display:none;}
+
+/* Message the mods */
+.sidecontentbox a.helplink        { display:block;margin-right:27px;margin-bottom:15px;width:80%;background-color:#FB4F14;background-image:none!important;border:none;border-top:2px solid #FB4F14;border-bottom:2px solid #FB4F14;-webkit-box-shadow:0 1px 0 #E2E0E0;box-shadow:0 1px 0 #E2E0E0;color:#fff!important;text-align:center;text-transform:capitalize;text-shadow:0 1px 0 #5787e1;letter-spacing:0;font-weight:700;font-size:13px;font-family:Arial, sans-serif;line-height:26px;cursor:default;}
+.sidecontentbox a.helplink:hover  { background-color:#171717;border-top:2px solid #171717;border-bottom:2px solid #FB4F14;-webkit-box-shadow:none;box-shadow:none;text-decoration:none;}
+.sidecontentbox a.helplink:active { background-color:#FB4F14;border-top:2px solid #21407a;border-bottom:2px solid #FB4F14;-webkit-box-shadow:none;box-shadow:none;}
+
+/* Links/Posts Area */
+/* Actual Links */
+.content{ margin-top:50px;margin-left:10px; }
+
+/* Fixed Scroll Banner */
+.titlebox h6         { position:fixed;top:0;right:0;left:0;z-index:97;height:35px;background-color:#fff;-webkit-box-shadow:0 2px 4px 0 #d3d3d3;box-shadow:0 2px 4px 0 #d3d3d3;color:#737373;text-align:center;font-weight:400;font-size:22px;line-height:35px;}
+.titlebox h6 a       { margin:0 17px;padding:2px 0;border:0 solid;color:#FB4F14;font-weight:400;font-size:22px;font-family:Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;}
+.titlebox h6 a:hover { border-bottom:2px solid #FB4F14!important;color:#262626!important;text-decoration:none;}
+
+/* reddit icon */
+.titlebox h6 a[href*="http://www.reddit.com#top"]       { position:fixed;left:0;top:0;height:35px;width:35px;background-color:#ff0;background-image:url(%%spritesheet%%);background-position:0 -49px;border-bottom:0;text-indent:-9999px;padding:0;margin:0; }
+.titlebox h6 a[href*="http://www.reddit.com#top"]:hover { background-position:-35px -49px;}
+.new-page .titlebox h6 a[href*="/new"],.top-page .titlebox h6 a[href*="/top"],.hot-page .titlebox h6 a[href*="/hot"] { border-bottom:2px solid #FB4F14;color:#262626; }
+.link { margin-right:320px;margin-bottom:8px;padding:8px 10px 6px; }
+.link,.side,.submit-page .infobar,.roundfield,.submit-page .content button,.content.submit .info-notice,.stylesheet-customize-container .pretty-form,#images,.search-page .raisedbox,.search-page .searchfacets,.linefield,.search-page .searchpane,.nextprev { border:0;border-bottom:3px solid #fff!important;background-color:#fff; }
+
+/* Stickied Link */
+.stickied.link                            { border-bottom-color:#C4DAC2!important;}
+.thing.stickied a.title,.thing.stickied a { color:#65b354!important;}
+.thing.stickied a.thumbnail               { background-position:-102px -209px;}
+
+/* Promoted Link */
+.organic-listing   { margin-right:320px;border:1px solid #D0D6DD;border-bottom-width:3px;border-top-width:0;}
+.link .title       { font-weight:700;font-family:Arial, sans-serif;line-height:100%;}
+.link .title:hover { color:#FB4F14!important;}
+
+/* Link Titles */
+/*Unvisited*/
+.thing .title.loggedin.click,.thing .title.click,.thing .title.loggedin,.thing .title{color:#FB4F14;}
+
+/*Visited  */
+.thing .title:visited,.thing.visited .title{color:#171717;}
+
+/*Clicking */
+.thing .title.loggedin.click:visited,.thing .title.click:visited{color:#FB4F14;}
+
+/* Upvote and downvotes */
+.link .score{margin-bottom:-1px;margin-left:1px;color:#999;font-family:arial, sans-serif;}
+
+/* Change vote tally color */
+.likes .score.likes          { color:#F9461C;}
+.likes div.score.likes       { color:#F9461C;}
+.dislikes .score.dislikes    { color:#000;}
+.dislikes div.score.dislikes { color:#000;}
+.arrow.upmod                 { background-image:url(%%upvote%%);background-position:0 0;height:15px;width:15px;}
+.arrow.downmod               { background-image:url(%%downvote%%);background-position:0 0;height:15px;width:15px;}
+
+/* Expand post */
+.expando-button { margin:0 5px 0 0!important;width:16px!important;height:16px!important;background-color:transparent!important;background-image:url(%%spritesheet%%)!important;cursor:pointer; }
+/*  +  */
+.content .expando-button.selftext.collapsed       { background-position:0 -17px;}
+/*  +  */
+.content .expando-button.selftext.collapsed:hover { background-position:-16px -17px;}
+/*  -  */
+.content .expando-button.selftext.expanded        { background-position:-32px -17px;}
+/*  -  */
+.content .expando-button.selftext.expanded:hover  { background-position:-48px -17px;}
+
+.expando-button.video.collapsed               { background-position:-64px -17px;}
+.expando-button.video.collapsed:hover,.eb-vch { background-position:-80px -17px;}
+.expando-button.video.expanded,.eb-ve         { background-position:-64px -17px;}
+.expando-button.video.expanded:hover,.eb-veh  { background-position:-80px -17px;}
+
+.res .expando-button.image.collapsed,.expando-button.image.gallery.collapsedExpando,.expando-button.image.collapsedExpando                   { background-position:-96px -17px!important;}
+.res .expando-button.image.collapsed:hover,.expando-button.image.collapsedExpando:hover,.expando-button.image.gallery.collapsedExpando:hover { background-position:-112px -17px!important;}
+.res .expando-button.image.expanded       { background-position:-96px -17px!important;}
+.res .expando-button.image.expanded:hover { background-position:-112px -17px!important;}
+
+/* Selftext expand */
+.link .usertext .md                 { padding:0 5px;background-color:#fff;border:0 solid;border-top:1px solid #e5e5e5;border-radius:0;color:#404040;font-weight:400;font-size:14px;font-family:arial, sans-serif;line-height:1.35em;}
+.domain                             { color:#FFF;}
+.domain a                           { color:silver;}
+.domain a:hover                     { color:#FB4F14;text-decoration:none;}
+.link .tagline                      { color:#999;font-size:12px;}
+.thumbnail                          { max-height:50px;max-width:70px;}
+.thumbnail.self                     { background-image:url(%%spritesheet%%);background-position:-102px -92px;background-repeat:no-repeat;}
+.thumbnail.default                  { background-image:url(%%spritesheet%%);background-position:-102px -154px;background-repeat:no-repeat;}
+.thumbnail.nsfw                     { width:80px;height:50px;background-image:url(%%spritesheet%%);background-position:-22px -150px;background-repeat:no-repeat;}
+.entry                              { padding-left:5px;}
+.entry .buttons li a                { padding:0 1px;color:#999;font-weight:400;font-size:13px;}
+.entry .buttons li a:hover          { color:#FB4F14;}
+.link .entry li .comments           { visibility:visible;color:#FB4F14;font-weight:700;font-size:13px;}
+#siteTable div.thing ul             { visibility:hidden;}
+#siteTable div.thing:hover ul       { visibility:visible;}
+.link .usertext .md ul              { visibility:visible!important;}
+.nsfw-stamp acronym                 { visibility:visible;background-color:#e82e63;border-radius:0;color:#fff;cursor:help;}
+.entry .buttons a[onclick*="reply"] { color:#FB4F14!important;font-weight:700!important;font-size:13px!important;}
+.link .flat-list                    { font-weight:400;font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;}
+.link .midcol                       { margin-right:7px;}
+.link .rank                         { display:none;}
+.link.last-clicked                  { overflow:hidden;background-color:#f8f8f8;border:0 solid #d8d8d8;border-bottom:3px solid #e5e5e5;}
+
+/* Mod Report buttons */
+.entry .buttons li.reported-stamp { background-color:#f5b400;border-radius:2px;border:1px solid #e2a600!important;color:#fff;font-weight:700;background-image:none;}
+a.pretty-button.negative          { border-radius:2px;background-color:#dc4437;color:#fff;font-weight:700;border:1px solid #c4362a;background-image:none;}
+a.pretty-button.neutral           { border-radius:2px;font-weight:700;color:#fff;background-color:#666;border:1px solid #4d4d4d;background-image:none;}
+a.pretty-button.positive          { border-radius:2px;font-weight:700;color:#fff;background-color:#109d59;border:1px solid #0a8a4c;background-image:none;}
+.menuarea                         { margin-right:320px;border:none;font-size:16px;}
+.infobar                          { margin-right:320px;background-color:#4B4A4A;border:none;color:#fff;font-size:14px;}
+.infobar a                        { color:#89B3FF;}
+
+/* First time visit infobar */
+.infobar.welcome  { margin-right:321px;color:#333;margin-bottom:8px;}
+.nextprev         { margin-top:8px;margin-right:320px;height:35px;color:#737373;text-align:center;font-size:16px;line-height:35px;padding:10px;}
+.nextprev a       { background-color:transparent;border:none;color:#FB4F14;}
+.nextprev a:hover { background-color:transparent;border:none;}
+
+/* Submit Page */
+form#newlink.submit.content               { margin-top:40px;}
+.submit-page .infobar                     { margin-top:0;margin-bottom:8px;padding:10px;color:#3b3b3b;text-align:center;text-indent:-9999px;font-size:0;}
+.formtabs-content .infobar:before         { display:block;text-indent:0;font-size:16px;}
+.submit-page .tabmenu li a                { margin:0;}
+.submit-page ul.tabmenu.formtab           { padding-left:0;width:500px;text-align:center;}
+.formtabs-content                         { padding-top:0;border-top:4px solid #FB4F14;}
+.submit-page .tabmenu.formtab a           { padding:5px 55px 0;width:100px;background-color:#FFF;border:0 solid;color:#FB4F14;text-align:center;font-weight:400;font-size:14px;}
+.submit-page .tabmenu.formtab .selected a { padding:5px 60px 0;background-color:#FB4F14;color:#fff;font-size:18px;}
+.roundfield                               { padding:10px;color:#707070;}
+.submit-page textarea,.roundfield input[type=url],.roundfield input[type=text],.login-form-side input[type=text],.login-form-side input[type=password],.linefield textarea,.linefield input[type="text"],.flairlist .flaircell input[type="text"],.linkinfo .shortlink input,.search-page #search input[type=text]{margin:0;padding:5px;border:1px solid #d9d9d9;border-top:1px solid silver;-webkit-box-shadow:none;box-shadow:none;color:#333;font-size:100%;font-family:arial, sans-serif;}
+.submit-page textarea:hover,.roundfield input[type=url]:hover,.roundfield input[type=text]:hover,.login-form-side input[type=text]:hover,.login-form-side input[type=password]:hover,.linefield textarea:hover,.linefield input[type="text"]:hover,.flairlist .flaircell input[type="text"]:hover,.linkinfo .shortlink input:hover,.search-page #search input[type=text]{border:1px solid #bebebe;}
+.submit-page textarea:focus,.roundfield input[type=url]:focus,.roundfield input[type=text]:focus,.login-form-side input[type=text]:focus,.login-form-side input[type=password]:focus,.linefield textarea:focus,.linefield input[type="text"]:focus,.flairlist .flaircell input[type="text"]:focus,.linkinfo .shortlink input:focus,.search-page #search input[type=text]{border:1px solid #4d90fe;color:#000;}
+
+.linefield .usertext-edit textarea { height:500px; }
+.submit-page .content textarea,.submit-page .content input[type=url],.submit-page .content input[type=text] { width:488px; }
+.submit-page .content button         { margin-bottom:30px;margin-left:0;padding:10px;width:522px;color:#707070!important;text-align:center;cursor:pointer;border:0;border-bottom:3px solid #E5E5E5;}
+.submit-page button:hover            { background-color:#FB4F14;color:#FFF!important;border-bottom:4px solid #477ADB;}
+.submit-page button:active           { background-color:#315fb2;border-bottom-color:#315fb2;}
+.submit-page h1                      { display:none;}
+.submit-page .side h1                { display:inherit;}
+.content.submit .info-notice         { margin:0 0 4px;padding:20px 10px;color:#707070;text-align:center;border:0;border-bottom:3px solid #E5E5E5;}
+.content.submit .info-notice a       { text-decoration:none;font-size:120%;}
+.content.submit .info-notice a:hover { text-decoration:underline;}
+.thing.spam                          { border-color:#F3B9B9;background-color:#fff;margin-right:320px;}
+#file                                { margin:10px;}
+.submit-page .gray,#url-field button,#suggested-reddits { display:none; }
+.submit-page form .spacer+.spacer    { margin:8px 0;}
+
+/* Flair Selector */
+.flairselector.drop-choices.active { visibility:visible!important;background-color:#fff;border:1px solid #d8d8d8;border-radius:2px;}
+.flairselector h2                  { padding:5px;background-color:#fff;border-bottom:1px solid #e5e5e5;color:#333;text-transform:capitalize;font-size:130%;}
+.flairoptionpane                   { text-align:left;}
+.flairoptionpane ul                { visibility:visible!important;}
+.flairoptionpane ul a.title        { font-size:100%!important;}
+.flairselector li                  { padding:3px 0;width:182px;}
+.flairselector li:hover            { background-color:#efefef;}
+.flairselector form                { border-top:1px solid #e5e5e5;}
+.flairsample-left                  { text-align:left!important;}
+.flairselector ul                  { overflow:visible;}
+.flairselector li.selected         { background-color:#e5ebf8;border:none;}
+
+/* WIKI Page */
+.wiki-page .wiki-page-content { margin:5px 320px 10px 0;padding:5px 10px;background-color:#fff;border:1px solid #d8d8d8; }
+.wiki-page .tabmenu li:nth-of-type(3),.wiki-page .tabmenu li:nth-of-type(4),.wiki-page .tabmenu li a[href*="/promoted"],.wiki-page .tabmenu li a[href*="/gilded"]{display:none;}
+.wiki-page .wiki-page-content .md.wiki h1 { margin-top:.5em;color:#333;font-size:1.5em;font-family:Arial, sans-serif;}
+.wiki-page .wiki-page-content .md.wiki h2 { font-size:1.45em;}
+.wiki-page .wiki-page-content .md.wiki h3 { font-size:1.4em;}
+.wiki-page .wiki-page-content .md.wiki h4 { font-size:1.35em;}
+.wiki-page .wiki-page-content .md.wiki p,.wiki-page .wiki-page-content .md.wiki .md.wiki blockquote { color:#404040;font-weight:400;font-size:14px;font-family:Arial, sans-serif;line-height:1.5em; }
+.wiki-page .pageactions                           { border:none;border-radius:0;}
+.wiki-page .pageactions .wikiaction               { text-transform:capitalize;font-size:110%;}
+.wiki-page .pageactions .wikiaction:hover         { background-color:transparent;}
+.wiki-page .pageactions .wikiaction-current       { background-color:#FB4F14;border-radius:0;color:#fff;}
+.wiki-page .pageactions .wikiaction-current:hover { background-color:#528bf3;text-decoration:none;}
+.wiki-page .wiki-page-content .md.wiki>.toc>ul  { padding:10px;border:1px solid #e5e5e5;font-weight:400;font-size:110%;}
+.wiki-page .wiki-page-content .discussionlink   { display:inline-block;position:relative;top:inherit;right:inherit;left:inherit;padding:inherit;width:175px;}
+.wiki-page .wiki-page-content .discussionlink a { padding-left:0;}
+.wiki-page .nextprev { display:none; }
+.wiki-page-content em,.wiki-page-content form#editform label { font-size:120%; }
+
+/*Stylesheet fix */
+.pretty-form          { margin-right:320px;margin-bottom:10px;padding:10px;color:#707070;}
+.pretty-form textarea { -webkit-box-shadow:none;box-shadow:none;}
+.stylesheet-customize-container textarea { margin:0;padding:0;border:0;border:1px solid #d8d8d8;border-bottom:1px solid #d8d8d8;border-radius:3px;color:#707070;font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; }
+.sheets .btn.right { display:none;}
+.sheets .col textarea       { width:100%;background-color:#fff;}
+.sheets .col textarea:hover { border-color:#B1B1B1;}
+.sheets .col textarea:focus { border-color:#FB4F14;}
+.sheets               { margin-right:0;}
+#images               { margin-right:320px;margin-bottom:30px;padding:10px;height:1280px;color:#707070;}
+ul#image-preview-list { margin:15px 0 0;padding-bottom:80px;font-size:14px;}
+
+/* COMMENT SECTION */
+.linkinfo                  { margin-top:-10px;padding-left:10px;background-color:transparent;border:none;border-bottom:1px solid #d5d5d5;color:#404040;}
+.commentarea               { margin-top:10px;margin-right:320px;margin-bottom:30px;padding:10px;background-color:#FCFCFC;border-bottom:3px solid #e5e5e5;color:#3b3b3b;}
+.commentarea>.usertext     { overflow:visible;margin:0 0 10px;padding:0;}
+a.author                   { margin-right:4px;color:#FB4F14;}
+.comments-page .tagline    { color:#999;font-size:small;font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;}
+.comments-page .tagline a  { margin-top:1px;background-color:transparent;color:#FB4F14;letter-spacing:1px;font-weight:700;font-size:12px;}
+.tagline a:hover           { text-decoration:underline;}
+.tagline .submitter        { color:#000!important;}
+.tagline .moderator,.green { color:#53a93f!important;}
+.tagline .moderator:after  { content:"oderator - speaking officially.";}
+a.author.moderator:after   { content:"";}
+.tagline .moderator:hover  { color:#65b354!important;}
+.comment .midcol           { margin-top:6px;width:15px!important;}
+.comment .score            { font-size:small;}
+
+/* Comments */
+.commentarea .menuarea { display:inline;margin:0 0 10px -320px;padding:0;color:silver;font-weight:400;font-size:110%;}
+.panestack-title       { display:inline;border-bottom:1px solid #e5e5e5;color:silver;}
+
+/*.commentarea .menuarea .toggle a, .panestack-title .title, .help-hoverable {display: none;}*/
+.panestack-title .title          { display:none;}
+.menuarea .spacer                { margin-right:-15px;}
+.commentarea .menuarea .toggle a { font-size:11px;color:silver;font-weight:400;}
+.menuarea .spacer .drop-choices.lightdrop                                                  { padding:5px;border-color:#DFDDDD;box-shadow:0 1px 1px #C9C9C9;font-family:arial, sans-serif;}
+.menuarea .spacer .drop-choices.lightdrop a.choice,.commentarea .menuarea form             { padding:.5px;font-size:14px;color:#FB4F14;}
+.menuarea .spacer .drop-choices.lightdrop a.choice:hover,.commentarea .menuarea form:hover { background-color:#FB4F14;color:#fff;text-decoration:none;}
+.menuarea .dropdown.lightdrop .selected       { background-image:none;color:#3b3b3b;text-decoration:none;opacity:10;cursor:pointer;}
+.menuarea .dropdown.lightdrop .selected:hover { color:#FB4F14;}
+.menuarea .dropdown.lightdrop .selected:after { content:" ≡";vertical-align:middle;opacity:0.5;}
+.comments-page .comment .md { color:#161616;font-weight:400;font-size:14px;font-family:Arial, sans-serif;line-height:1.35em;}
+hr                          { border-width:1px;border-style:solid;border-color:#e5e5e5;}
+.comments-page textarea       { background-color:#fff;border:1px solid #ccc;color:#999;font-size:13px;font-family:arial, sans-serif;}
+.comments-page textarea:hover { border-color:#bebebe;}
+.comments-page textarea:focus { border:1px solid #4d90fe;color:#000;}
+.usertext .help-toggle,.usertext a.reddiquette { font-size:100%;}
+.usertext a.reddiquette                        { color:#DD4B39;}
+.comments-page .usertext.border .usertext-body { padding-left:5px;background-color:#f0f0f0;}
+.comment .expand       { background-color:transparent;color:#999!important;}
+.comment .expand:hover { background-color:transparent;color:#999!important;text-decoration:underline;}
+.comment .child,.comment .showreplies{margin-top:10px;margin-left:15px;border-left:0 solid;}
+/* H2 3 4 5 markup *//*
+    .link .usertext .md h2, .comments-page .comment .md h2,
+    .link .usertext .md h3, .comments-page .comment .md h3,
+    .link .usertext .md h4, .comments-page .comment .md h4,
+    .link .usertext .md h5, .comments-page .comment .md h5 {
+      display: inline;
+      margin-top: 5px;
+      border: none;
+      font-weight: normal;
+      font-size: 18px;
+      font-family: arial, sans-serif;
+    }
+
+      .link .usertext .md h2, .comments-page .comment .md h2 {color: #d73d32;}
+      .link .usertext .md h3, .comments-page .comment .md h3 {color: #FB4F14;}
+      .link .usertext .md h4, .comments-page .comment .md h4 {color: #53a93f;}
+      .link .usertext .md h5, .comments-page .comment .md h5 {color: #f4b400;}*/
+/* Footer */
+.footer-parent  { margin-top:120px;padding-top:0;background-color:transparent;}
+.footer         { border:none;color:#969696;font-family:arial, sans-serif;}
+.footer:before  { display:block;margin:10px;padding:10px;color:#FB4F14;content:"Subreddit Layout /r/Naut";text-transform:none;font-size:16px;font-family:arial, sans-serif;}
+.footer a       { color:#969696;font-weight:400;font-size:14px;}
+.footer a:hover { color:#FB4F14;text-decoration:underline;}
+.footer .col    { border-left:1px solid #D5D5D5;}
+.debuginfo      { background-color:transparent;color:#969696;}
+
+/* Some login stuff */
+.login-form-side { border:0;border-bottom:1px solid #d8d8d8;font-size:120%;margin:10px;}
+.login-form-side input[type=text],.login-form-side input[type=password] { margin:10px 0;width:265px;}
+.popup           { position:fixed;left:10%;margin-bottom:30px;padding:10px;background-color:#FFF;border:0 solid;border-radius:2px;color:#3b3b3b;font-size:16px;font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;}
+.cover           { position:fixed;top:0;left:0;z-index:1000;width:100%;height:100%;background-color:#FFF;opacity:.6;}
+
+/* Search page */
+.search-page #search                  { position:relative;top:0;margin:0 150px 0 80px;height:50px;background:none!important;background-color:transparent;text-align:left;}
+.search-page .searchpane              { margin:5px 320px 5px 0;padding-left:96px;height:120px;}
+.search-page .raisedbox               { padding:5px;border:0 solid;}
+.search-page #search input[type=text] { padding:5px 0 5px 40px;font-size:150%;}
+.searchfacets                         { margin-top:10px;margin-right:320px;padding:10px;box-shadow:none;color:#3b3b3b;border:0 solid;border-bottom:3px solid #E5E5E5;}
+.search-page #header .tabmenu         { display:none!important;}
+.search-page .side                    { padding-top:40px;}
+.search-summary                       { margin-right:40px;}
+
+/* Fuckin' Reddit Enhancement Suite (RES) */
+.res .keyHighlight             { background-color:transparent;outline:0 solid;}
+.res .RES-keyNav-activeElement,.res .commentarea .RES-keyNav-activeElement .md,.res .commentarea .RES-keyNav-activeElement.entry .noncollapsed { background-color:transparent!important;}
+.res .RES-keyNav-activeElement { outline:1px dashed #C5C5C5!important;border-radius:0!important;}
+
+/* Res Live Preview */
+.RESDialogSmall      { border:1px solid #DFDFDF!important;border-radius:0!important;}
+.RESDialogSmall > h3 { background-color:#f4f4f4!important;border-bottom:1px solid #DFDFDF!important;border-radius:0!important;color:#333!important;}
+.res .comment        { margin-top:0!important;margin-bottom:3px!important;border:1px solid #f8f8f8!important;}
+
+/* comment comment comment comment comment god damn it */
+.comments-page .comment{background-color:#FCFCFC!important;}
+.comments-page .comment .comment{background-color:#FCFCFC!important;}
+.comments-page .comment .comment .comment{background-color:#FCFCFC!important;}
+.comments-page .comment .comment .comment .comment{background-color:#FCFCFC!important;}
+.comments-page .comment .comment .comment .comment .comment{background-color:#FCFCFC!important;}
+.comments-page .comment .comment .comment .comment .comment .comment{background-color:#FCFCFC!important;}
+.comments-page .comment .comment .comment .comment .comment .comment .comment{background-color:#FCFCFC!important;}
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment{background-color:#FCFCFC!important;}
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment{background-color:#FCFCFC!important;}
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment{background-color:#FCFCFC!important;}
+
+.RESshortcutside{padding:0!important;background:none repeat-x scroll center left!important;background-color:#FFF!important;background-image:none!important;border:0 solid!important;border-radius:0!important;color:#FB4F14!important;text-transform:capitalize!important;font-weight:500!important;font-size:14px!important;line-height:20px!important;}
+.RESshortcutside.remove{padding:0 3px 0 0!important;background-color:#FFF!important;background-image:none!important;border:0 solid!important;color:#3b3b3b!important;font-weight:lighter!important;}
+.RESDashboardToggle{padding:0!important;background:none repeat-x scroll center left!important;background-color:#FFF!important;background-image:none!important;border:0 solid!important;border-radius:0!important;color:#FB4F14!important;text-transform:capitalize!important;font-weight:500!important;font-size:14px!important;line-height:20px!important;}
+.RESDashboardToggle.remove{padding:2px 6px 2px 0!important;background-color:#FFF!important;background-image:none!important;border:0 solid!important;color:#3b3b3b!important;font-weight:lighter!important;}
+#RESShortcutsEditContainer{top:1px!important;background-color:#2d2d2d!important;}
+#RESShortcutsRight,#RESShortcutsLeft,#RESShortcutsAdd,#RESShortcutsTrash{background-color:#2d2d2d!important;color:#979797!important;}
+#srLeftContainer,#RESShortcutsViewport,#RESShortcutsEditContainer{border-left:1px solid #666;padding-left:10px;}
+.res #RESShortcutsSort{width:30px!important;background-color:transparent!important;color:#B1B1B1!important;}
+.content .RESBigEditorPop{color:#333!important;padding:2px;}
+.markdownEditor{white-space:inherit!important;}
+#progressIndicator,#NERFail,.NERPageMarker{margin-right:320px!important;width:inherit!important;background-color:#FFF!important;border:1px solid #d8d8d8!important;border-top:0 solid!important;border-bottom:3px solid #d8d8d8!important;border-radius:2px!important;}
+.res #NREFloat{top:8px;z-index:100;}
+.res .fancy-toggle-button .add:after{right:50px!important;}
+.RESSubscriptionButton{background-color:#FFF!important;border:0 solid!important;border-radius:0!important;color:#FB4F14!important;}
+.res #userbarToggle{display:none!important;}
+#RESAccountSwitcherIcon{margin-top:-5px;}
+.res .author.submitter{padding:2px 5px!important;background-color:#DD4B39!important;border-radius:0!important;color:#fff!important;}
+.res .author.submitter:hover{background-color:#ed5f4d!important;}
+.res .author.moderator{padding:2px 5px!important;background-color:#53a93f!important;border-radius:0!important;color:#fff!important;}
+.res .author.moderator:hover{background-color:#64be4f!important;color:#fff!important;}
+.res .blueButton{padding:2px 3px!important;background-color:#53a93f!important;border:none!important;border-radius:0!important;}
+
+/* CUSTOMIZATION */
+/* Link Flairs that you can make! */
+.linkflair-one .linkflairlabel   { background-color:#dc4437;border:1px solid #d03e32;color:#fff;}
+.linkflair-two .linkflairlabel   { background-color:#f5b400;border:1px solid #e5a800;color:#fff;}
+.linkflair-three .linkflairlabel { background-color:#FB4F14;border:1px solid #3a7ae6;color:#fff;}
+
+/* Create your own! */
+.linkflair-squee .linkflairlabel  { background-color:#FB4F14;/* Base color */border:1px solid #3a7ae6;/* Slightly darker to create nice edges */color:#fff;/* Text color - alternatively use #333 when white is too light */}
+
+/* Submit page message */
+.formtabs-content .infobar:before { content:"Please remember to follow the subreddit rules.";/* Don't delete the " "*/}
+
+/* Subscriber Name */
+div.titlebox span.number:after { content:" in The Jungle";}
+
+/* Leave the space before the name! */
+/* CUSTOM LOGO CSS */
+.pagename a       { top:49px;/* The length the logo is moved from the top of the page */width:150px;/* TOTAL Image width */margin-left:-75px;/* This HAS to be ->50%< of the TOTAL image width. Don't delete the MINUS! */height:60px;}
+.pagename a:hover { background-position:0 -60px;}
+
+/* Replace the 77 with your height */
+/*Bengals Tiger Head. TODO: figure out how to make it be covered by drop-down*/
+.side h4 + ul{list-style-type:none;position:absolute;top:134px;left:95px;z-index:99;margin:0;padding:0;}
+.side h4 + ul li{display:block;}
+.side h4 + ul li ~ li{display:none;background-color:#FFF;border:1px solid #000;}
+.side h4 + ul li:first-child{position:absolute;left:-50px;}
+.side h4 + ul li:first-child a{display:block;height:40px;width:40px;background:transparent url(%%tigerheadlogo%%) no-repeat 0 0;}
+.side h4 + ul li a[href="/r/bengals"]:before{content:normal;}
+.side h4 + ul li:first-child:hover ~ li,.side .md ul:hover li:not(:first-child){display:block;}
+.side h4 + ul li a{display:inline-block;width:20px;height:22px;line-height:20px;margin:0 5px;}
+
+/*Modified NFL Teams Quick Menu from /r/Seahawks*/
+.side h6 + ul{list-style-type:none;position:absolute;top:134px;left:135px;z-index:99;margin:0;padding:0;}
+.side h6 + ul li{display:block;}
+.side h6 + ul li ~ li{display:none;background-color:#FFF;border:1px solid #000;}
+.side h6 + ul li a:nth-child(5),.side h6 + ul li a:nth-child(9),.side h6 + ul li a:nth-child(13){border-left:1px solid #000;padding-left:6px;}
+.side h6 + ul li a:nth-child(8){border-right:1px solid #000;margin-right:-3px;padding-right:8px;}
+.side h6 + ul li:first-child{position:absolute;left:-50px;}
+.side h6 + ul li:first-child a{display:block;height:40px;width:40px;background:transparent url(%%nflheaderlogo%%) no-repeat 0 0;}
+.side h6 + ul li:first-child a:hover{background-position:0 0;}
+.side h6 + ul li a[href="/r/NFL"]:before{content:normal;}
+.side h6 + ul li:first-child:hover ~ li,.side .md ul:hover li:not(:first-child){display:block;}
+.side h6 + ul li a{display:inline-block;width:22px;height:22px;line-height:20px;margin:0 5px;}
+
+/* CSS3 animations */
+@-webkit-keyframes pulse{
+  0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+  50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05);}
+  100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+}
+@keyframes pulse{
+  0%{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+  50%{-webkit-transform:scale3d(1.05,1.05,1.05);-ms-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05);}
+  100%{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+}
+@-webkit-keyframes tada{
+  0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+  10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);}
+  30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);}
+  40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);}
+  100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+}
+@keyframes tada{
+  0%{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+  10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);-ms-transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);}
+  30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);-ms-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);}
+  40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);-ms-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);}
+  100%{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+}
+@-webkit-keyframes flipInX{
+  0%{-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-transition-timing-function:ease-in;transition-timing-function:ease-in;opacity:0;}
+  40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-transition-timing-function:ease-in;transition-timing-function:ease-in;}
+  60%{-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg);opacity:1;}
+  80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg);}
+  100%{-webkit-transform:perspective(400px);transform:perspective(400px);}
+}
+@keyframes flipInX{
+  0%{-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);-ms-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-transition-timing-function:ease-in;transition-timing-function:ease-in;opacity:0;}
+  40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);-ms-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-transition-timing-function:ease-in;transition-timing-function:ease-in;}
+  60%{-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);-ms-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg);opacity:1;}
+  80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);-ms-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg);}
+  100%{-webkit-transform:perspective(400px);-ms-transform:perspective(400px);transform:perspective(400px);}
+}
+@-webkit-keyframes fadeIn{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+@keyframes fadeIn{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
