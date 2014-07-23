@@ -708,17 +708,17 @@ div.titlebox span.number:after { content:" in The Jungle";}
 
 /* Replace the 77 with your height */
 /*Bengals Tiger Head. TODO: figure out how to make it be covered by drop-down*/
-.side h4 + ul{list-style-type:none;position:absolute;top:134px;left:95px;z-index:99;margin:0;padding:0;}
+.side h4 + ul{list-style-type:none;position:absolute;top:132px;left:94px;z-index:99;margin:0;padding:0;}
 .side h4 + ul li{display:block;}
 .side h4 + ul li ~ li{display:none;background-color:#FFF;border:1px solid #000;}
 .side h4 + ul li:first-child{position:absolute;left:-50px;}
-.side h4 + ul li:first-child a{display:block;height:40px;width:40px;background:transparent url(%%tigerheadlogo%%) no-repeat 0 0;}
+.side h4 + ul li:first-child a{display:block;height:40px;width:40px;background:transparent url(%%tigerheadlogo2%%) no-repeat 0 0;}
 .side h4 + ul li a[href="/r/bengals"]:before{content:normal;}
 .side h4 + ul li:first-child:hover ~ li,.side .md ul:hover li:not(:first-child){display:block;}
 .side h4 + ul li a{display:inline-block;width:20px;height:22px;line-height:20px;margin:0 5px;}
 
 /*Modified NFL Teams Quick Menu from /r/Seahawks*/
-.side h6 + ul{list-style-type:none;position:absolute;top:134px;left:135px;z-index:99;margin:0;padding:0;}
+.side h6 + ul{list-style-type:none;position:absolute;top:132px;left:135px;z-index:99;margin:0;padding:0;}
 .side h6 + ul li{display:block;}
 .side h6 + ul li ~ li{display:none;background-color:#FFF;border:1px solid #000;}
 .side h6 + ul li a:nth-child(5),.side h6 + ul li a:nth-child(9),.side h6 + ul li a:nth-child(13){border-left:1px solid #000;padding-left:6px;}
