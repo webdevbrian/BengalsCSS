@@ -73,7 +73,7 @@
 .flair-BUF    { background-position:2px -132px;}
 .flair-CAR    { background-position:2px -152px;}
 .flair-CHI    { background-position:2px -170px;}
-.flair-CIN    { background-position:2px -190px; -webkit-animation:pulse 1s infinite; -moz-animation:pulse 1s infinite; animation:pulse 1s infinite; -moz-animation-delay: 5s; -webkit-animation-delay: 5s; animation-delay: 5s; }
+.flair-CIN    { background-position:2px -190px; -webkit-animation:flair-pulse 3s infinite; -moz-animation:flair-pulse 3s infinite; animation:flair-pulse 3s infinite; -moz-animation-delay: 5s; -webkit-animation-delay: 5s; animation-delay: 5s; }
 .flair-CLE    { background-position:2px -211px;width:20px;height:17px;}
 .flair-DAL    { background-position:2px -232px;}
 .flair-DEN    { background-position:2px -253px;width:20px;height:17px;}
@@ -585,7 +585,7 @@ a.author.moderator:after   { content:"";}
 .commentarea .menuarea .toggle a { font-size:11px;color:silver;font-weight:400;}
 .menuarea .spacer .drop-choices.lightdrop                                                  { padding:5px;border-color:#DFDDDD;box-shadow:0 1px 1px #C9C9C9;font-family:arial, sans-serif;}
 .menuarea .spacer .drop-choices.lightdrop a.choice,.commentarea .menuarea form             { padding:.5px;font-size:14px;color:#FB4F14;}
-.menuarea .spacer .drop-choices.lightdrop a.choice:hover,.commentarea .menuarea form:hover { background-color:#FB4F14;color:#fff;text-decoration:none;}
+.menuarea .spacer .drop-choices.lightdrop a.choice:hover,.commentarea .menuarea form:hover { background-color:white;color:#fff;text-decoration:none;}
 .menuarea .dropdown.lightdrop .selected       { background-image:none;color:#3b3b3b;text-decoration:none;opacity:10;cursor:pointer;}
 .menuarea .dropdown.lightdrop .selected:hover { color:#FB4F14;}
 .menuarea .dropdown.lightdrop .selected:after { content:" ≡";vertical-align:middle;opacity:0.5;}
@@ -759,6 +759,19 @@ div.titlebox span.number:after { content:" in The Jungle";}
   0%{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
   50%{-webkit-transform:scale3d(1.05,1.05,1.05);-ms-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05);}
   100%{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+}
+
+@-webkit-keyframes flair-pulse{
+  0%   { -webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+  20%  { -webkit-transform:scale3d(1.07,1.07,1.07);transform:scale3d(1.07,1.07,1.07); }
+  40%  { -webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1); }
+  100% { -webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1); }
+}
+@keyframes flair-pulse{
+  0%   { -webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
+  20%  { -webkit-transform:scale3d(1.07,1.07,1.07);transform:scale3d(1.07,1.07,1.07); }
+  40%  { -webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1); }
+  100% { -webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1); }
 }
 
 @-webkit-keyframes tada{
