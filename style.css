@@ -35,6 +35,13 @@
 /*==================================================
  FONT
 ===================================================*/
+
+/*TEXT ANIMATIONS*/
+/*Comments*/
+.usertext h6,.comment .md h6  { -webkit-animation:flair-pulse 1s infinite; -moz-animation:flair-pulse 1s infinite; animation:flair-pulse 1s infinite; -moz-animation-delay: 5s; -webkit-animation-delay: 5s; animation-delay: 5s; float:left; clear:left; margin-left: 4px; }
+.comment .md h5  { -webkit-animation:flash 5s infinite; -moz-animation:flash 5s infinite; animation:flash 5s infinite; -moz-animation-delay: 5s; -webkit-animation-delay: 5s; animation-delay: 5s; }
+
+
 /*TEXT COLORS*/
 
 /*Colored Text in Comments*/
@@ -46,9 +53,9 @@
 
 /*Colored Text in Body of self posts */
 /*Orange*/
-.self .md h1,.self .md h2 { font-weight:700;font-size:16px;color:#FB4F14;font-family:arial,sans-serif;border:none!important;}
+.self .md h1,.self .md h2 { font-weight:700;font-size:16px;color:#FB4F14;font-family:arial,sans-serif;border:none!important; clear: both; }
 /*Black*/
-.self .md h3,.self .md h3 { font-weight:700;font-size:16px;color:#000;font-family:arial,sans-serif;border:none!important;}
+.self .md h3,.self .md h3 { font-weight:700;font-size:16px;color:#000;font-family:arial,sans-serif;border:none!important; clear: both; }
 
 /* Sidebar stuff from r/Episodehub */
 .titlebox                          { padding:-100px;background-color:#FFF;}
@@ -63,7 +70,7 @@
 /*==================================================
  FLAIRS
 ===================================================*/
-.flair        { background:url(%%flair-sprite%%) no-repeat;width:20px;height:18px;border:none;bottom:-2px;top:-2px;padding:6px 0 0 8px;color:#FFF;font-family:Impact, sans-serif;font-size:10px;letter-spacing:1px; display: inline-block; vertical-align: middle; margin-top: -3px;}
+.flair        { background:url(%%flair-sprite%%) no-repeat;width:20px;height:18px;border:none;bottom:-2px;top:-2px;padding:6px 0 0 8px;color:#FFF;font-family:Impact, sans-serif;font-size:10px;letter-spacing:1px; display: inline-block; vertical-align: middle; margin-top: -4px !important;}
 .flair-black  { background-position:0 0;text-shadow:0 0 1px #fb4f14 0 0 1px #fb4f14 1px 1px 1px #fb4f14 1px 1px 1px #fb4f14;}
 .flair-orange { background-position:0 -23px;text-shadow:0 0 1px black, 0 0 1px black, 1px 1px 1px black, 1px 1px 1px #000;}
 .flair-white  { background-position:0 -46px;text-shadow:0 0 1px #fb4f14 0 0 1px #fb4f14 1px 1px 1px #fb4f14 1px 1px 1px #fb4f14;color:#000;}
@@ -111,7 +118,7 @@
 /* Team logos for use in comments */
 a[href="/black"]:nth-of-type(n):before,a[href$="/r/bengals"]:nth-of-type(n):before,a[href="/orange"]:nth-of-type(n):before,a[href$="/r/bengals"]:nth-of-type(n):before,a[href="/white"]:nth-of-type(n):before,a[href$="/r/bengals"]:nth-of-type(n):before,a[href="/ARI"]:nth-of-type(n):before,a[href$="/r/azcardinals"]:nth-of-type(n):before,a[href="/ATL"]:nth-of-type(n):before,a[href$="/r/falcons"]:nth-of-type(n):before,a[href="/BAL"]:nth-of-type(n):before,a[href$="/r/ravens"]:nth-of-type(n):before,a[href="/BUF"]:nth-of-type(n):before,a[href$="/r/buffalobills"]:nth-of-type(n):before,a[href="/CAR"]:nth-of-type(n):before,a[href$="/r/panthers"]:nth-of-type(n):before,a[href="/CHI"]:nth-of-type(n):before,a[href$="/r/chibears"]:nth-of-type(n):before,a[href="/CIN"]:nth-of-type(n):before,a[href$="/r/cinbengals"]:nth-of-type(n):before,a[href$="/r/bengals"]:nth-of-type(n):before,a[href="/CLE"]:nth-of-type(n):before,a[href$="/r/browns"]:nth-of-type(n):before,a[href="/DAL"]:nth-of-type(n):before,a[href$="/r/cowboys"]:nth-of-type(n):before,a[href="/DEN"]:nth-of-type(n):before,a[href$="denverbroncos"]:nth-of-type(n):before,a[href="/DET"]:nth-of-type(n):before,a[href$="/r/detroitlions"]:nth-of-type(n):before,a[href$="/GB"]:nth-of-type(n):before,a[href$="/r/greenbaypackers"]:nth-of-type(n):before,a[href="/HOU"]:nth-of-type(n):before,a[href$="/r/texans"]:nth-of-type(n):before,a[href="/IND"]:nth-of-type(n):before,a[href$="/r/colts"]:nth-of-type(n):before,a[href="/JAC"]:nth-of-type(n):before,a[href$="/r/jaguars"]:nth-of-type(n):before,a[href="/KC"]:nth-of-type(n):before,a[href$="/r/kansascitychiefs"]:nth-of-type(n):before,a[href="/MIA"]:nth-of-type(n):before,a[href$="miamidolphins"]:nth-of-type(n):before,a[href="/MIN"]:nth-of-type(n):before,a[href$="/r/minnesotavikings"]:nth-of-type(n):before,a[href="/NE"]:nth-of-type(n):before,a[href$="/r/patriots"]:nth-of-type(n):before,a[href="/NO"]:nth-of-type(n):before,a[href$="/r/saints"]:nth-of-type(n):before,a[href="/NYG"]:nth-of-type(n):before,a[href$="/r/nygiants"]:before,a[href="/NYJ"]:nth-of-type(n):before,a[href$="/r/nyjets"]:nth-of-type(n):before,a[href="/OAK"]:nth-of-type(n):before,a[href$="/r/oaklandraiders"]:nth-of-type(n):before,a[href="/PHI"]:nth-of-type(n):before,a[href$="/r/eagles"]:nth-of-type(n):before,a[href="/PIT"]:nth-of-type(n):before,a[href$="/r/steelers"]:nth-of-type(n):before,a[href="/SD"]:nth-of-type(n):before,a[href$="/r/chargers"]:nth-of-type(n):before,a[href="/SF"]:nth-of-type(n):before,a[href$="/r/49ers"]:nth-of-type(n):before,a[href="/SEA"]:nth-of-type(n):before,a[href$="/r/seahawks"]:nth-of-type(n):before,a[href="/STL"]:nth-of-type(n):before,a[href$="/r/stlouisrams"]:nth-of-type(n):before,a[href="/TB"]:nth-of-type(n):before,a[href$="/r/buccaneers"]:nth-of-type(n):before,a[href="/TEN"]:nth-of-type(n):before,a[href$="/r/tntitans"]:nth-of-type(n):before,a[href$="r/tennesseetitans"]:nth-of-type(n):before,a[href="/WAS"]:nth-of-type(n):before,a[href$="/r/redskins"]:nth-of-type(n):before,a[href="/NFL"]:nth-of-type(n):before,a[href="/NFC"]:nth-of-type(n):before,a[href="/AFC"]:nth-of-type(n):before,a[href="/OIL"]:nth-of-type(n):before,
 /*a[href="/RAV"]:nth-of-type(n):before,*/
-a[href="/OON"]:nth-of-type(n):before,a[href="/DOG"]:nth-of-type(n):before,a[href="/TRO"]:nth-of-type(n):before{width:26px;height:20px;display:inline-block;background-repeat:no-repeat;background-image:url(%%flair-sprite%%);background-position:-9999px -9999px;vertical-align:middle;margin-right:3px;content:"";}
+a[href="/OON"]:nth-of-type(n):before,a[href="/DOG"]:nth-of-type(n):before,a[href="/TRO"]:nth-of-type(n):before{width:26px;height:20px;display:inline-block;background-repeat:no-repeat;background-image:url(%%flair-sprite%%);background-position:-9999px -9999px;vertical-align:middle;margin-right:3px;margin-top: -5px; content:"";}
 /* Fantasy Football Winner Flair *//* Not active, but kept in for reference. put the username after the author[href$="].... like href$="/pfftYeahRight" *//*
 .author:after {
     position: relative;
@@ -589,7 +596,8 @@ a.author.moderator:after   { content:"";}
 .menuarea .dropdown.lightdrop .selected       { background-image:none;color:#3b3b3b;text-decoration:none;opacity:10;cursor:pointer;}
 .menuarea .dropdown.lightdrop .selected:hover { color:#FB4F14;}
 .menuarea .dropdown.lightdrop .selected:after { content:" ≡";vertical-align:middle;opacity:0.5;}
-.comments-page .comment .md { color:#161616;font-weight:400;font-size:14px;font-family:Arial, sans-serif;line-height:1.35em;}
+.comments-page .comment .md   { color:#161616;font-weight:400;font-size:14px;font-family:Arial, sans-serif;line-height:1.35em; overflow: hidden;}
+.comments-page .comment .md p { clear: both; }
 hr                          { border-width:1px;border-style:solid;border-color:#e5e5e5;}
 .comments-page textarea       { background-color:#fff;border:1px solid #ccc;color:#999;font-size:13px;font-family:arial, sans-serif;}
 .comments-page textarea:hover { border-color:#bebebe;}
@@ -718,19 +726,34 @@ div.titlebox span.number:after { content:" in The Jungle";}
 .side h4 + ul li a{display:inline-block;width:20px;height:22px;line-height:20px;margin:0 5px;}
 
 /*Modified NFL Teams Quick Menu from /r/Seahawks*/
-.side h6 + ul{list-style-type:none;position:absolute;top:132px;left:135px;z-index:99;margin:0;padding:0;}
-.side h6 + ul li{display:block;}
-.side h6 + ul li ~ li{display:none;background-color:#FFF;border:1px solid #000;}
-.side h6 + ul li a:nth-child(5),.side h6 + ul li a:nth-child(9),.side h6 + ul li a:nth-child(13){border-left:1px solid #000;padding-left:6px;}
-.side h6 + ul li a:nth-child(8){border-right:1px solid #000;margin-right:-3px;padding-right:8px;}
-.side h6 + ul li:first-child{position:absolute;left:-50px;}
-.side h6 + ul li:first-child a{display:block;height:40px;width:40px;background:transparent url(%%nflheaderlogo%%) no-repeat 0 0;}
-.side h6 + ul li:first-child a:hover{background-position:0 0;}
+.side h6 + ul{ list-style-type:none;position:absolute;top:132px;left:135px;z-index:99;margin:-2px 0 0 0;padding:0; }
+.side h6 + ul li              { display:block; }
+.side h6 + ul li:first-child         { position:absolute;left:-50px; top: 2px;}
+.side h6 + ul li:first-child a:hover { -webkit-transform: none; -moz-transform: none; transform: none;  }
+.side h6 + ul li:nth-child(2) { border-radius: 5px; -webkit-animation:fadeIn 500ms 1;-moz-animation:fadeIn 500ms 1;animation:fadeIn 500ms 1; padding: 4px 10px; }
+.side h6 + ul li:nth-child(3) { border-radius: 5px; -webkit-animation:fadeIn 500ms 1;-moz-animation:fadeIn 500ms 1;animation:fadeIn 500ms 1; margin-top: -1px; padding: 4px 10px; }
+.side h6 + ul li ~ li{ display:none; background-color:#FFF; border:1px solid #000; margin-top: -6px;}
+.side h6 + ul li a::before{ margin-top: 0px !important;  }
+.side h6 + ul li a       { margin-top: 0px !important; -webkit-transition: all 100ms ease-in-out; }
+.side h6 + ul li a:hover { -webkit-transform: scale(1.4); -moz-transform: scale(1.4); transform: scale(1.4); }
+.side h6 + ul li a:nth-child(5),.side h6 + ul li a:nth-child(9),.side h6 + ul li a:nth-child(13){ }
+.side h6 + ul li a:nth-child(8){ }
+.side h6 + ul li:first-child a       { display:block;height:40px;width:40px;background:transparent url(%%nflheaderlogo%%) no-repeat 0 0;}
+.side h6 + ul li:first-child a:hover { background-position:0 0;}
 .side h6 + ul li a[href="/r/NFL"]:before{content:normal;}
-.side h6 + ul li:first-child:hover ~ li,.side .md ul:hover li:not(:first-child){display:block;}
+.side h6 + ul li:first-child:hover ~ li,.side .md ul:hover li:not(:first-child){ display:block; opacity: .9; }
 .side h6 + ul li a{display:inline-block;width:22px;height:22px;line-height:20px;margin:0 5px;}
 
 /* CSS3 animations */
+@-webkit-keyframes flash {
+  0%, 50%, 100% { opacity: 1;}
+  25%, 75%      { opacity: 0;}
+}
+@keyframes flash {
+  0%, 50%, 100% { opacity: 1;}
+  25%, 75%      { opacity: 0;}
+}
+
 @-webkit-keyframes rubberBand {
   0% {-webkit-transform: scale3d(1, 1, 1);transform: scale3d(1, 1, 1);}
   30% {-webkit-transform: scale3d(1.25, 0.75, 1);transform: scale3d(1.25, 0.75, 1);}
