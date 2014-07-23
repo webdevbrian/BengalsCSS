@@ -1,3 +1,14 @@
+/*
+* DO NOT DELETE THESE IMAGES:
+* - blogo
+* - blogo-mask
+* - btm-bar
+* - spritesheet
+* - tigerheadlogo2
+* - nflheaderlogo
+* - flair-sprite
+* - 2014header
+*/
 /*==================================================
  SIDEBAR IMAGE
 ===================================================*/
@@ -24,11 +35,12 @@
 /*==================================================
  FONT
 ===================================================*/
-/*TEXT COLOURS*/
+/*TEXT COLORS*/
 
 /*Colored Text in Comments*/
 /*Orange*/
-.comment .md h1,.comment .md h2 { font-family:Helvetica, Arial, sans-serif;font-weight:700;font-size:16px;color:#FB4F14;font-family:arial,sans-serif;border:none!important;}
+.comment .md h1,.comment .md h2 { font-family:Helvetica, Arial, sans-serif;font-weight:700;font-size:16px;color:#FB4F14;font-family:arial,sans-serif;border:none!important;  }
+
 /*Black*/
 .comment .md h3,.comment .md h3 { font-weight:700;font-size:16px;color:#000;font-family:arial,sans-serif;border:none!important;}
 
@@ -51,7 +63,7 @@
 /*==================================================
  FLAIRS
 ===================================================*/
-.flair        { background:url(%%flair-sprite%%) no-repeat;width:20px;height:18px;border:none;bottom:-2px;top:-2px;padding:6px 0 0 8px;color:#FFF;font-family:Impact, sans-serif;font-size:10px;letter-spacing:1px;}
+.flair        { background:url(%%flair-sprite%%) no-repeat;width:20px;height:18px;border:none;bottom:-2px;top:-2px;padding:6px 0 0 8px;color:#FFF;font-family:Impact, sans-serif;font-size:10px;letter-spacing:1px; display: inline-block; vertical-align: middle; margin-top: -3px;}
 .flair-black  { background-position:0 0;text-shadow:0 0 1px #fb4f14 0 0 1px #fb4f14 1px 1px 1px #fb4f14 1px 1px 1px #fb4f14;}
 .flair-orange { background-position:0 -23px;text-shadow:0 0 1px black, 0 0 1px black, 1px 1px 1px black, 1px 1px 1px #000;}
 .flair-white  { background-position:0 -46px;text-shadow:0 0 1px #fb4f14 0 0 1px #fb4f14 1px 1px 1px #fb4f14 1px 1px 1px #fb4f14;color:#000;}
@@ -61,7 +73,7 @@
 .flair-BUF    { background-position:2px -132px;}
 .flair-CAR    { background-position:2px -152px;}
 .flair-CHI    { background-position:2px -170px;}
-.flair-CIN    { background-position:2px -190px;}
+.flair-CIN    { background-position:2px -190px; -webkit-animation:pulse 1s infinite; -moz-animation:pulse 1s infinite; animation:pulse 1s infinite; -moz-animation-delay: 5s; -webkit-animation-delay: 5s; animation-delay: 5s; }
 .flair-CLE    { background-position:2px -211px;width:20px;height:17px;}
 .flair-DAL    { background-position:2px -232px;}
 .flair-DEN    { background-position:2px -253px;width:20px;height:17px;}
@@ -226,7 +238,7 @@ button:active,#search input[type='submit']:active,.wiki-page .wiki-page-content 
 .listing-page .tabmenu li a[href*="/gilded"] /* gilded */ { display:none;}
 
 /* Big ol' B - BENGALS LOGO (For searching) */
-.listing-page #header-bottom-left::after { position:absolute;top:18px;left:50%;margin-left:-78px;width:150px;height:106px;background:url(%%blogo%%);content:" ";text-indent:-9999px;-webkit-animation:tada 1s 1;-moz-animation:tada 1s 1;animation:tada 1s 1; -webkit-animation-delay: 1s; animation-delay: 1s;}
+.listing-page #header-bottom-left::after { position:absolute;top:18px;left:50%;margin-left:-78px;width:150px;height:106px;background:url(%%blogo%%);content:" ";text-indent:-9999px;-webkit-animation:tada 1s 1;-moz-animation:tada 1s 1;animation:tada 1s 1; -moz-animation-delay: 1s; -webkit-animation-delay: 1s; animation-delay: 1s;}
 #header-bottom-left::after               { position:absolute;top:18px;left:50%;margin-left:-78px;width:150px;height:106px;background:url(%%blogo%%);content:" ";text-indent:-9999px;}
 .single-page,.listing-page               { -webkit-animation:fadeIn 500ms 1;-moz-animation:fadeIn 500ms 1;animation:fadeIn 500ms 1;}
 
@@ -369,17 +381,31 @@ div.titlebox span.word                    { display:none;}
 .link { margin-right:320px;margin-bottom:8px;padding:8px 10px 6px; }
 .link,.side,.submit-page .infobar,.roundfield,.submit-page .content button,.content.submit .info-notice,.stylesheet-customize-container .pretty-form,#images,.search-page .raisedbox,.search-page .searchfacets,.linefield,.search-page .searchpane,.nextprev { border:0;border-bottom:3px solid #fff!important;background-color:#fff; }
 
-/* Stickied Link */
-.stickied.link                            { border-bottom-color:#C4DAC2!important;}
-.thing.stickied a.title,.thing.stickied a { color:#65b354!important;}
-.thing.stickied a.thumbnail               { background-position:-102px -209px;}
+/******************************************
+* Stickied Link
+******************************************/
 
-/* Promoted Link */
+/* List view */
+.listing-page .stickied.link                            { border-bottom-color:#e8cfb1!important; background: white url(%%sticky-tigerstripes%%) repeat-x top; }
+.listing-page .thing.stickied a.title,.thing.stickied a { color:#FF8F00!important; }
+.listing-page .thing.stickied a.thumbnail               { background-position:-102px -209px;}
+.listing-page .tagline .stickied-tagline                { color:#FF8F00!important; font-weight: bold; }
+
+/* Single post view */
+.comments-page .stickied.link                            { border-bottom-color:#e8cfb1!important; background: white url(%%sticky-tigerstripes%%) repeat-x top; }
+.comments-page .thing.stickied a.title,.thing.stickied a { color:#FF8F00!important; }
+.comments-page .thing.stickied a.thumbnail               { background-position:-102px -209px;}
+.comments-page .tagline .stickied-tagline                { color:#FF8F00!important; font-weight: bold; }
+
+/******************************************
+* Promoted Link
+******************************************/
 .organic-listing   { margin-right:320px;border:1px solid #D0D6DD;border-bottom-width:3px;border-top-width:0;}
 .link .title       { font-weight:700;font-family:Arial, sans-serif;line-height:100%;}
 .link .title:hover { color:#FB4F14!important;}
 
 /* Link Titles */
+
 /*Unvisited*/
 .thing .title.loggedin.click,.thing .title.click,.thing .title.loggedin,.thing .title{color:#FB4F14;}
 
@@ -401,7 +427,7 @@ div.titlebox span.word                    { display:none;}
 .arrow.downmod               { background-image:url(%%downvote%%);background-position:0 0;height:15px;width:15px;}
 
 /* Expand post */
-.expando-button { margin:0 5px 0 0!important;width:16px!important;height:16px!important;background-color:transparent!important;background-image:url(%%spritesheet%%)!important;cursor:pointer; }
+.expando-button { margin:0 5px 0 3px!important;width:16px!important;height:16px!important;background-color:transparent!important;background-image:url(%%spritesheet%%)!important;cursor:pointer; }
 /*  +  */
 .content .expando-button.selftext.collapsed       { background-position:0 -17px;}
 /*  +  */
@@ -422,7 +448,7 @@ div.titlebox span.word                    { display:none;}
 .res .expando-button.image.expanded:hover { background-position:-112px -17px!important;}
 
 /* Selftext expand */
-.link .usertext .md                 { padding:0 5px;background-color:#fff;border:0 solid;border-top:1px solid #e5e5e5;border-radius:0;color:#404040;font-weight:400;font-size:14px;font-family:arial, sans-serif;line-height:1.35em;}
+.link .usertext .md                 { padding:0 5px;background-color:#fff;border:0 solid;border:1px solid #ffdeba;border-radius:0;color:#404040;font-weight:400;font-size:14px;font-family:arial, sans-serif;line-height:1.35em;}
 .domain                             { color:#FFF;}
 .domain a                           { color:silver;}
 .domain a:hover                     { color:#FB4F14;text-decoration:none;}
@@ -619,7 +645,7 @@ hr                          { border-width:1px;border-style:solid;border-color:#
 /* Fuckin' Reddit Enhancement Suite (RES) */
 .res .keyHighlight             { background-color:transparent;outline:0 solid;}
 .res .RES-keyNav-activeElement,.res .commentarea .RES-keyNav-activeElement .md,.res .commentarea .RES-keyNav-activeElement.entry .noncollapsed { background-color:transparent!important;}
-.res .RES-keyNav-activeElement { outline:1px dashed #C5C5C5!important;border-radius:0!important;}
+.res .RES-keyNav-activeElement { outline:none !important; border-radius:0!important;}
 
 /* Res Live Preview */
 .RESDialogSmall      { border:1px solid #DFDFDF!important;border-radius:0!important;}
@@ -706,85 +732,24 @@ div.titlebox span.number:after { content:" in The Jungle";}
 
 /* CSS3 animations */
 @-webkit-keyframes rubberBand {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-
-  65% {
-    -webkit-transform: scale3d(.95, 1.05, 1);
-    transform: scale3d(.95, 1.05, 1);
-  }
-
-  75% {
-    -webkit-transform: scale3d(1.05, .95, 1);
-    transform: scale3d(1.05, .95, 1);
-  }
-
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+  0% {-webkit-transform: scale3d(1, 1, 1);transform: scale3d(1, 1, 1);}
+  30% {-webkit-transform: scale3d(1.25, 0.75, 1);transform: scale3d(1.25, 0.75, 1);}
+  40% {-webkit-transform: scale3d(0.75, 1.25, 1);transform: scale3d(0.75, 1.25, 1);}
+  50% {-webkit-transform: scale3d(1.15, 0.85, 1);transform: scale3d(1.15, 0.85, 1);}
+  65% {-webkit-transform: scale3d(.95, 1.05, 1);transform: scale3d(.95, 1.05, 1);}
+  75% {-webkit-transform: scale3d(1.05, .95, 1);transform: scale3d(1.05, .95, 1);}
+  100% {-webkit-transform: scale3d(1, 1, 1);transform: scale3d(1, 1, 1);}
 }
-
 @keyframes rubberBand {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    -ms-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    -ms-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    -ms-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    -ms-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-
-  65% {
-    -webkit-transform: scale3d(.95, 1.05, 1);
-    -ms-transform: scale3d(.95, 1.05, 1);
-    transform: scale3d(.95, 1.05, 1);
-  }
-
-  75% {
-    -webkit-transform: scale3d(1.05, .95, 1);
-    -ms-transform: scale3d(1.05, .95, 1);
-    transform: scale3d(1.05, .95, 1);
-  }
-
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    -ms-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+  0% {-webkit-transform: scale3d(1, 1, 1);transform: scale3d(1, 1, 1);}
+  30% {-webkit-transform: scale3d(1.25, 0.75, 1);transform: scale3d(1.25, 0.75, 1);}
+  40% {-webkit-transform: scale3d(0.75, 1.25, 1);transform: scale3d(0.75, 1.25, 1);}
+  50% {-webkit-transform: scale3d(1.15, 0.85, 1);transform: scale3d(1.15, 0.85, 1);}
+  65% {-webkit-transform: scale3d(.95, 1.05, 1);transform: scale3d(.95, 1.05, 1);}
+  75% {-webkit-transform: scale3d(1.05, .95, 1);transform: scale3d(1.05, .95, 1);}
+  100% {-webkit-transform: scale3d(1, 1, 1);transform: scale3d(1, 1, 1);}
 }
+
 @-webkit-keyframes pulse{
   0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
   50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05);}
@@ -795,6 +760,7 @@ div.titlebox span.number:after { content:" in The Jungle";}
   50%{-webkit-transform:scale3d(1.05,1.05,1.05);-ms-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05);}
   100%{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
 }
+
 @-webkit-keyframes tada{
   0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
   10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);transform:scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);}
@@ -809,6 +775,7 @@ div.titlebox span.number:after { content:" in The Jungle";}
   40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);-ms-transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);transform:scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);}
   100%{-webkit-transform:scale3d(1,1,1);-ms-transform:scale3d(1,1,1);transform:scale3d(1,1,1);}
 }
+
 @-webkit-keyframes flipInX{
   0%{-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-transition-timing-function:ease-in;transition-timing-function:ease-in;opacity:0;}
   40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-transition-timing-function:ease-in;transition-timing-function:ease-in;}
@@ -823,6 +790,7 @@ div.titlebox span.number:after { content:" in The Jungle";}
   80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);-ms-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg);}
   100%{-webkit-transform:perspective(400px);-ms-transform:perspective(400px);transform:perspective(400px);}
 }
+
 @-webkit-keyframes fadeIn{
   0%{opacity:0;}
   100%{opacity:1;}
