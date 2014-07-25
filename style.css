@@ -6,16 +6,16 @@
 * - spritesheet
 * - tigerheadlogo2
 * - nflheaderlogo
-* - flair-sprite
+* - flair-sprite-new
 * - 2014header
 */
 /*==================================================
  SIDEBAR IMAGE
 ===================================================*/
-.side                       { padding-right:-5px;background-image:url(%%vontaze-couch-new%%);/*change image here*/background-repeat:no-repeat;}
+.side                       { padding-right:-5px;background-image:url(%%leon-hall-sidebar-2%%);/*change image here*/background-repeat:no-repeat;}
 .side .spacer:first-of-type { position:relative;}
 /*Text underneath: */
-.side .spacer:first-of-type:after { position:absolute;bottom:53px;/*move rest of sidebar and update text content first before positioning text here.*/width:296px;font-size:120%;left:0;text-align:center;color:#FFF;padding:2px;background:#000;opacity:.7;content:'Who Dey.';}
+.side .spacer:first-of-type:after { position:absolute;bottom:53px;/*move rest of sidebar and update text content first before positioning text here.*/width:296px;font-size:120%;left:0;text-align:center;color:#FFF;padding:2px;background:#000;opacity:.7;content:'Bengals training camp is under way!.';}
 
 /* Sidebar */
 .side{float:right;margin:50px 10px 0 0;padding-top:386px;/*SIDEBAR: CHANGE TO image height in pixels*/width:300px;text-align:left;font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;}
@@ -27,10 +27,10 @@
 /*Table Header */
 .side .md table th      { background-color:#171717;border-top:none;border-left:none;border-bottom:none;border-right:1px solid #ccc;color:#fafafa;font-size:90%;font-weight:700;padding:.5em;text-align:center;text-shadow:1px 1px 0 #111;}
 /*Table Body*/
-.side .md table td      { border-top:none;border-left:none;border-right:1px solid #ccc;padding:.2em;text-align:center;}
-.side .md table td a    { color:#20558a!important;}
-.side table tbody       { display:none;}
-.side table:hover tbody { display:table-row-group;}
+.side .md table td      { border-top:none;border-left:none;border-right:1px solid #ccc;padding:.2em;text-align:center; }
+.side .md table td a    { color:#20558a!important; }
+.side table tbody       { display:none; }
+.side table:hover tbody { display:table-row-group; -webkit-animation:fadeIn 1s 1; -moz-animation:fadeIn 1s 1; animation:fadeIn 1s 1; }
 
 /*==================================================
  FONT
@@ -70,7 +70,7 @@
 /*==================================================
  FLAIRS
 ===================================================*/
-.flair        { background:url(%%flair-sprite%%) no-repeat;width:20px;height:18px;border:none;bottom:-2px;top:-2px;padding:6px 0 0 8px;color:#FFF;font-family:Impact, sans-serif;font-size:10px;letter-spacing:1px; display: inline-block; vertical-align: middle; margin-top: -4px !important;}
+.flair        { background:url(%%flair-sprite-new%%) no-repeat;width:20px;height:18px;border:none;bottom:-2px;top:-2px;padding:6px 0 0 8px;color:#FFF;font-family:Impact, sans-serif;font-size:10px;letter-spacing:1px; display: inline-block; vertical-align: middle; margin-top: -4px !important;}
 .flair-black  { background-position:0 0;text-shadow:0 0 1px #fb4f14 0 0 1px #fb4f14 1px 1px 1px #fb4f14 1px 1px 1px #fb4f14;}
 .flair-orange { background-position:0 -23px;text-shadow:0 0 1px black, 0 0 1px black, 1px 1px 1px black, 1px 1px 1px #000;}
 .flair-white  { background-position:0 -46px;text-shadow:0 0 1px #fb4f14 0 0 1px #fb4f14 1px 1px 1px #fb4f14 1px 1px 1px #fb4f14;color:#000;}
@@ -118,7 +118,7 @@
 /* Team logos for use in comments */
 a[href="/black"]:nth-of-type(n):before,a[href$="/r/bengals"]:nth-of-type(n):before,a[href="/orange"]:nth-of-type(n):before,a[href$="/r/bengals"]:nth-of-type(n):before,a[href="/white"]:nth-of-type(n):before,a[href$="/r/bengals"]:nth-of-type(n):before,a[href="/ARI"]:nth-of-type(n):before,a[href$="/r/azcardinals"]:nth-of-type(n):before,a[href="/ATL"]:nth-of-type(n):before,a[href$="/r/falcons"]:nth-of-type(n):before,a[href="/BAL"]:nth-of-type(n):before,a[href$="/r/ravens"]:nth-of-type(n):before,a[href="/BUF"]:nth-of-type(n):before,a[href$="/r/buffalobills"]:nth-of-type(n):before,a[href="/CAR"]:nth-of-type(n):before,a[href$="/r/panthers"]:nth-of-type(n):before,a[href="/CHI"]:nth-of-type(n):before,a[href$="/r/chibears"]:nth-of-type(n):before,a[href="/CIN"]:nth-of-type(n):before,a[href$="/r/cinbengals"]:nth-of-type(n):before,a[href$="/r/bengals"]:nth-of-type(n):before,a[href="/CLE"]:nth-of-type(n):before,a[href$="/r/browns"]:nth-of-type(n):before,a[href="/DAL"]:nth-of-type(n):before,a[href$="/r/cowboys"]:nth-of-type(n):before,a[href="/DEN"]:nth-of-type(n):before,a[href$="denverbroncos"]:nth-of-type(n):before,a[href="/DET"]:nth-of-type(n):before,a[href$="/r/detroitlions"]:nth-of-type(n):before,a[href$="/GB"]:nth-of-type(n):before,a[href$="/r/greenbaypackers"]:nth-of-type(n):before,a[href="/HOU"]:nth-of-type(n):before,a[href$="/r/texans"]:nth-of-type(n):before,a[href="/IND"]:nth-of-type(n):before,a[href$="/r/colts"]:nth-of-type(n):before,a[href="/JAC"]:nth-of-type(n):before,a[href$="/r/jaguars"]:nth-of-type(n):before,a[href="/KC"]:nth-of-type(n):before,a[href$="/r/kansascitychiefs"]:nth-of-type(n):before,a[href="/MIA"]:nth-of-type(n):before,a[href$="miamidolphins"]:nth-of-type(n):before,a[href="/MIN"]:nth-of-type(n):before,a[href$="/r/minnesotavikings"]:nth-of-type(n):before,a[href="/NE"]:nth-of-type(n):before,a[href$="/r/patriots"]:nth-of-type(n):before,a[href="/NO"]:nth-of-type(n):before,a[href$="/r/saints"]:nth-of-type(n):before,a[href="/NYG"]:nth-of-type(n):before,a[href$="/r/nygiants"]:before,a[href="/NYJ"]:nth-of-type(n):before,a[href$="/r/nyjets"]:nth-of-type(n):before,a[href="/OAK"]:nth-of-type(n):before,a[href$="/r/oaklandraiders"]:nth-of-type(n):before,a[href="/PHI"]:nth-of-type(n):before,a[href$="/r/eagles"]:nth-of-type(n):before,a[href="/PIT"]:nth-of-type(n):before,a[href$="/r/steelers"]:nth-of-type(n):before,a[href="/SD"]:nth-of-type(n):before,a[href$="/r/chargers"]:nth-of-type(n):before,a[href="/SF"]:nth-of-type(n):before,a[href$="/r/49ers"]:nth-of-type(n):before,a[href="/SEA"]:nth-of-type(n):before,a[href$="/r/seahawks"]:nth-of-type(n):before,a[href="/STL"]:nth-of-type(n):before,a[href$="/r/stlouisrams"]:nth-of-type(n):before,a[href="/TB"]:nth-of-type(n):before,a[href$="/r/buccaneers"]:nth-of-type(n):before,a[href="/TEN"]:nth-of-type(n):before,a[href$="/r/tntitans"]:nth-of-type(n):before,a[href$="r/tennesseetitans"]:nth-of-type(n):before,a[href="/WAS"]:nth-of-type(n):before,a[href$="/r/redskins"]:nth-of-type(n):before,a[href="/NFL"]:nth-of-type(n):before,a[href="/NFC"]:nth-of-type(n):before,a[href="/AFC"]:nth-of-type(n):before,a[href="/OIL"]:nth-of-type(n):before,
 /*a[href="/RAV"]:nth-of-type(n):before,*/
-a[href="/OON"]:nth-of-type(n):before,a[href="/DOG"]:nth-of-type(n):before,a[href="/TRO"]:nth-of-type(n):before{width:26px;height:20px;display:inline-block;background-repeat:no-repeat;background-image:url(%%flair-sprite%%);background-position:-9999px -9999px;vertical-align:middle;margin-right:3px;margin-top: -5px; content:"";}
+a[href="/OON"]:nth-of-type(n):before,a[href="/DOG"]:nth-of-type(n):before,a[href="/TRO"]:nth-of-type(n):before{width:26px;height:20px;display:inline-block;background-repeat:no-repeat;background-image:url(%%flair-sprite-new%%);background-position:-9999px -9999px;vertical-align:middle;margin-right:3px;margin-top: -5px; content:"";}
 /* Fantasy Football Winner Flair *//* Not active, but kept in for reference. put the username after the author[href$="].... like href$="/pfftYeahRight" *//*
 .author:after {
     position: relative;
@@ -130,7 +130,7 @@ a[href="/OON"]:nth-of-type(n):before,a[href="/DOG"]:nth-of-type(n):before,a[href
     margin-right: 2px;
     overflow: visible;
     content: " ";
-    background-image: url(%%flair-sprite%%);
+    background-image: url(%%flair-sprite-new%%);
     background-position:  2px -865px;
     }*/
 
@@ -245,14 +245,17 @@ button:active,#search input[type='submit']:active,.wiki-page .wiki-page-content 
 .listing-page .tabmenu li a[href*="/gilded"] /* gilded */ { display:none;}
 
 /* Big ol' B - BENGALS LOGO (For searching) */
-.listing-page #header-bottom-left::after { position:absolute;top:18px;left:50%;margin-left:-78px;width:150px;height:106px;background:url(%%blogo%%);content:" ";text-indent:-9999px;-webkit-animation:tada 1s 1;-moz-animation:tada 1s 1;animation:tada 1s 1; -moz-animation-delay: 1s; -webkit-animation-delay: 1s; animation-delay: 1s;}
-#header-bottom-left::after               { position:absolute;top:18px;left:50%;margin-left:-78px;width:150px;height:106px;background:url(%%blogo%%);content:" ";text-indent:-9999px;}
+
 .single-page,.listing-page               { -webkit-animation:fadeIn 500ms 1;-moz-animation:fadeIn 500ms 1;animation:fadeIn 500ms 1;}
 
 .side h5 + ul{list-style-type:none; position:absolute;top: 7px;left: 50%;width: 150px;height: 106px;margin-left: -78px;z-index:99; }
 .side h5 + ul li{display:block;}
-.side h5 + ul li a {display:inline-block; width: 150px;height: 106px;background-image: none;}
 
+.side h5 + ul li a       { display:inline-block; width: 150px;height: 106px; text-indent:-9999px; background:url(%%blogo%%); }
+.side h5 + ul li a:hover { -webkit-animation:tada 1s 1;-moz-animation:tada 1s 1;animation:tada 1s 1;}
+
+/* B Logo only on the homepage animate it*/
+.listing-page .side h5 + ul li a {display:inline-block; width: 150px;height: 106px; text-indent:-9999px; background:url(%%blogo%%); -webkit-animation:tada 1s 1;-moz-animation:tada 1s 1;animation:tada 1s 1; -moz-animation-delay: 1s; -webkit-animation-delay: 1s; animation-delay: 1s; }
 
 /* User bar */
 #header-bottom-right         { position:absolute!important;top:86px!important;right:10px!important;padding:8px 15px 20px!important;height:12px!important;background-color:#000!important;}
@@ -605,6 +608,7 @@ hr                          { border-width:1px;border-style:solid;border-color:#
 .usertext .help-toggle,.usertext a.reddiquette { font-size:100%;}
 .usertext a.reddiquette                        { color:#DD4B39;}
 .comments-page .usertext.border .usertext-body { padding-left:5px;background-color:#f0f0f0;}
+.usertext-body p { clear: both; }
 .comment .expand       { background-color:transparent;color:#999!important;}
 .comment .expand:hover { background-color:transparent;color:#999!important;text-decoration:underline;}
 .comment .child,.comment .showreplies{margin-top:10px;margin-left:15px;border-left:0 solid;}
@@ -730,18 +734,20 @@ div.titlebox span.number:after { content:" in The Jungle";}
 .side h6 + ul li              { display:block; }
 .side h6 + ul li:first-child         { position:absolute;left:-50px; top: 2px;}
 .side h6 + ul li:first-child a:hover { -webkit-transform: none; -moz-transform: none; transform: none;  }
-.side h6 + ul li:nth-child(2) { border-radius: 5px; -webkit-animation:fadeIn 500ms 1;-moz-animation:fadeIn 500ms 1;animation:fadeIn 500ms 1; padding: 4px 10px; }
-.side h6 + ul li:nth-child(3) { border-radius: 5px; -webkit-animation:fadeIn 500ms 1;-moz-animation:fadeIn 500ms 1;animation:fadeIn 500ms 1; margin-top: -1px; padding: 4px 10px; }
-.side h6 + ul li ~ li{ display:none; background-color:#FFF; border:1px solid #000; margin-top: -6px;}
+.side h6 + ul li:nth-child(2) { border-radius: 5px; -webkit-animation:fadeIn 200ms 1;-moz-animation:fadeIn 200ms 1;animation:fadeIn 200ms 1; padding: 4px 10px; }
+.side h6 + ul li:nth-child(3) { border-radius: 5px; -webkit-animation:fadeIn 200ms 1;-moz-animation:fadeIn 200ms 1;animation:fadeIn 200ms 1; margin-top: -7px; padding: 4px 10px; -webkit-box-shadow: 0px 3px 2px 0px rgba(50, 50, 50, 1);
+-moz-box-shadow:    0px 3px 2px 0px rgba(50, 50, 50, 1);
+box-shadow:         0px 3px 2px 0px rgba(50, 50, 50, 1); }
+.side h6 + ul li ~ li{ display:none; background-color:#FFF; margin-top: -6px; }
 .side h6 + ul li a::before{ margin-top: 0px !important;  }
-.side h6 + ul li a       { margin-top: 0px !important; -webkit-transition: all 100ms ease-in-out; }
-.side h6 + ul li a:hover { -webkit-transform: scale(1.4); -moz-transform: scale(1.4); transform: scale(1.4); }
+.side h6 + ul li a       { margin-top: 0px !important; -webkit-transition: all 100ms ease-in-out; -moz-transition: all 100ms ease-in-out; -o-transition: all 100ms ease-in-out; transition: all 100ms ease-in-out; }
+.side h6 + ul li a:hover { -webkit-transform: scale(1.4); -moz-transform: scale(1.4); -o-transform: scale(1.4); transform: scale(1.4); }
 .side h6 + ul li a:nth-child(5),.side h6 + ul li a:nth-child(9),.side h6 + ul li a:nth-child(13){ }
 .side h6 + ul li a:nth-child(8){ }
 .side h6 + ul li:first-child a       { display:block;height:40px;width:40px;background:transparent url(%%nflheaderlogo%%) no-repeat 0 0;}
 .side h6 + ul li:first-child a:hover { background-position:0 0;}
 .side h6 + ul li a[href="/r/NFL"]:before{content:normal;}
-.side h6 + ul li:first-child:hover ~ li,.side .md ul:hover li:not(:first-child){ display:block; opacity: .9; }
+.side h6 + ul li:first-child:hover ~ li,.side .md ul:hover li:not(:first-child){ display:block; }
 .side h6 + ul li a{display:inline-block;width:22px;height:22px;line-height:20px;margin:0 5px;}
 
 /* CSS3 animations */
@@ -841,7 +847,7 @@ div.titlebox span.number:after { content:" in The Jungle";}
 * HEADER TEXT FOR EDITING (Moved here for easy edits!)
 *****************************************************/
 /* Preseason game text */
-.side h5 + ul li a::before {color: white; position: absolute;top: 32px; left: 50%; width: 320px!important; height: 21px!important; margin-left: -435px; z-index: 99; background-color: transparent; background-image: none!important; font-size: 13px; line-height: 18px; text-align: center; 
+#header-bottom-left::after {color: white; position: absolute;top: 50px; left: 50%; width: 320px!important; height: 21px!important; margin-left: -435px; z-index: 99; background-color: transparent; background-image: none!important; font-size: 13px; line-height: 18px; text-align: center; 
 
     content: "Next Preseason Game:"!important;
 
