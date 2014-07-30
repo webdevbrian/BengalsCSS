@@ -849,9 +849,11 @@ box-shadow:         0px 3px 2px 0px rgba(50, 50, 50, 1); }
 * HEADER TEXT FOR EDITING (Moved here for easy edits!)
 *****************************************************/
 /* Season score */
+/*
 #header::before { position: absolute; top: 26px; left: 50%; margin-left: 26px; width: 320px; height: 22px; text-align: center; color: #FFF; margin-top: 19px; font-size: 42px;
   content: "(0-0-0)"!important;
 }
+*/
 
 /* Preseason game text */
 #header-bottom-left::after {color: white; position: absolute;top: 50px; left: 50%; width: 320px!important; height: 21px!important; margin-left: -435px; z-index: 99; background-color: transparent; background-image: none!important; font-size: 13px; line-height: 18px; text-align: center; 
