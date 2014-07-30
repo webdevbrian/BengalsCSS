@@ -12,10 +12,12 @@
 /*==================================================
  SIDEBAR IMAGE
 ===================================================*/
-.side                       { padding-right:-5px;background-image:url(%%leon-hall-sidebar-2%%);/*change image here*/background-repeat:no-repeat;}
+.side                       { padding-right:-5px;background-image:url(%%leon-hall-sidebar-2%%);background-repeat:no-repeat;}
 .side .spacer:first-of-type { position:relative;}
 /*Text underneath: */
-.side .spacer:first-of-type:after { position:absolute;bottom:53px;/*move rest of sidebar and update text content first before positioning text here.*/width:296px;font-size:120%;left:0;text-align:center;color:#FFF;padding:2px;background:#000;opacity:.7;content:'Bengals training camp is under way!.';}
+.side .spacer:first-of-type:after { position:absolute;bottom:53px;
+    /*move rest of sidebar and update text content first before positioning text here.*/
+    width:296px;font-size:120%;left:0;text-align:center;color:#FFF;padding:2px;background:#000;opacity:.7;content:'Bengals training camp is under way!.';}
 
 /* Sidebar */
 .side{float:right;margin:50px 10px 0 0;padding-top:386px;/*SIDEBAR: CHANGE TO image height in pixels*/width:300px;text-align:left;font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;}
@@ -70,7 +72,7 @@
 /*==================================================
  FLAIRS
 ===================================================*/
-.flair        { background:url(%%flair-sprite%%) no-repeat;width:20px;height:18px;border:none;bottom:-2px;top:-2px;padding:6px 0 0 8px;color:#FFF;font-family:Impact, sans-serif;font-size:10px;letter-spacing:1px; display: inline-block; vertical-align: middle; margin-top: -4px !important;}
+.flair        { background:url(%%flair-sprite%%) no-repeat;width:20px;height:18px;border:none;bottom:-2px;top:-2px;padding:5px 0 0 8px;color:#FFF;font-family:Impact, sans-serif;font-size:10px;letter-spacing:1px; display: inline-block; vertical-align: middle; margin-top: -4px !important;}
 .flair-black  { background-position:0 0;text-shadow:0 0 1px #fb4f14 0 0 1px #fb4f14 1px 1px 1px #fb4f14 1px 1px 1px #fb4f14;}
 .flair-orange { background-position:0 -23px;text-shadow:0 0 1px black, 0 0 1px black, 1px 1px 1px black, 1px 1px 1px #000;}
 .flair-white  { background-position:0 -46px;text-shadow:0 0 1px #fb4f14 0 0 1px #fb4f14 1px 1px 1px #fb4f14 1px 1px 1px #fb4f14;color:#000;}
@@ -846,16 +848,21 @@ box-shadow:         0px 3px 2px 0px rgba(50, 50, 50, 1); }
 /*****************************************************
 * HEADER TEXT FOR EDITING (Moved here for easy edits!)
 *****************************************************/
+/* Season score */
+#header::before { position: absolute; top: 26px; left: 50%; margin-left: 26px; width: 320px; height: 22px; text-align: center; color: #FFF; margin-top: 19px; font-size: 42px;
+  content: "(0-0-0)"!important;
+}
+
 /* Preseason game text */
 #header-bottom-left::after {color: white; position: absolute;top: 50px; left: 50%; width: 320px!important; height: 21px!important; margin-left: -435px; z-index: 99; background-color: transparent; background-image: none!important; font-size: 13px; line-height: 18px; text-align: center; 
 
     content: "Next Preseason Game:"!important;
 
-    }
+}
 
 /* HEADER GAME DATE AND TIME ANNOUNCEMENT */
 #header-bottom-left::before {position:absolute;top:53px;left:50%;margin-left:-438px;width:320px;height:22px;text-align: center;color:#FFF; margin-top:19px;font-size:16px;-webkit-animation:rubberBand 2s 1;-moz-animation:rubberBand 2s 1;animation:rubberBand 2s 1; -webkit-animation-delay: 2s; animation-delay: 2s; text-shadow:0 2px 2px rgba(0,0,0,1); 
 
     content: "Thu, Aug 7 @ Kansas City - 8:00PM ET";
 
-    }
+}
