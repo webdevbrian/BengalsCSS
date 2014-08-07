@@ -15,7 +15,7 @@
 .side                       { padding-right:-5px;background-image:url(%%dalton6years%%);/*change image here*/background-repeat:no-repeat;}
 .side .spacer:first-of-type { position:relative;}
 /*Text underneath: */
-.side .spacer:first-of-type:after { position:absolute;bottom:59px;/*move rest of sidebar and update text content first before positioning text here.*/width:296px;font-size:120%;left:0;text-align:center;color:#FFF;padding:2px;background:#000;opacity:.7;content:'6 Years, $96Mil - Andy is in it for the long haul!';}
+.side .spacer:first-of-type:after { position:absolute;bottom:59px;/*move rest of sidebar and update text content first before positioning text here.*/width:296px;font-size:120%;left:0;text-align:center;color:#FFF;padding:2px;background:#000;opacity:.7;content:'6 Years, $96Mil - Andy is in for the long haul!';}
 
 /* Sidebar */
 .side{float:right;margin:50px 10px 0 0;padding-top:335px;/*SIDEBAR: CHANGE TO image height in pixels*/width:300px;text-align:left;font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;}
@@ -29,8 +29,8 @@
 /*Table Body*/
 .side .md table td      { border-top:none;border-left:none;border-right:1px solid #ccc;padding:.2em;text-align:center; }
 .side .md table td a    { color:#20558a!important; }
-.side table tbody       { display:none; }
-.side table:hover tbody { display:table-row-group; -webkit-animation:fadeIn 1s 1; -moz-animation:fadeIn 1s 1; animation:fadeIn 1s 1; }
+/*.side table tbody       { display:none; }*/
+/*.side table:hover tbody { display:table-row-group; -webkit-animation:fadeIn 1s 1; -moz-animation:fadeIn 1s 1; animation:fadeIn 1s 1; }*/
 
 /*==================================================
  FONT
@@ -38,8 +38,8 @@
 
 /*TEXT ANIMATIONS*/
 /*Comments*/
-.usertext h6,.comment .md h6  { -webkit-animation:flair-pulse 1s infinite; -moz-animation:flair-pulse 1s infinite; animation:flair-pulse 1s infinite; float:left; clear:left; margin-left: 4px; }
-.comment .md h5  { -webkit-animation:flash 5s infinite; -moz-animation:flash 5s infinite; animation:flash 5s infinite; }
+.usertext h6,.comment .md h6  { -webkit-animation:flair-pulse 1s infinite; -moz-animation:flair-pulse 1s infinite; animation:flair-pulse 1s infinite; -moz-animation-delay: 5s; -webkit-animation-delay: 5s; animation-delay: 5s; float:left; clear:left; margin-left: 4px; }
+.comment .md h5  { -webkit-animation:flash 5s infinite; -moz-animation:flash 5s infinite; animation:flash 5s infinite; -moz-animation-delay: 5s; -webkit-animation-delay: 5s; animation-delay: 5s; }
 
 
 /*TEXT COLORS*/
@@ -70,7 +70,7 @@
 /*==================================================
  FLAIRS
 ===================================================*/
-.flair        { background:url(%%flair-sprite%%) no-repeat;width:20px;height:18px;border:none;bottom:-2px;top:-2px;padding:6px 0 0 8px;color:#FFF;font-family:Impact, sans-serif;font-size:10px;letter-spacing:1px; display: inline-block; vertical-align: middle; margin-top: -4px !important;}
+.flair        { background:url(%%flair-sprite%%) no-repeat;width:20px;height:18px;border:none;bottom:-2px;top:-2px;padding:5px 0 0 8px;color:#FFF;font-family:Impact, sans-serif;font-size:10px;letter-spacing:1px; display: inline-block; vertical-align: middle; margin-top: 1px !important;}
 .flair-black  { background-position:0 0;text-shadow:0 0 1px #fb4f14 0 0 1px #fb4f14 1px 1px 1px #fb4f14 1px 1px 1px #fb4f14;}
 .flair-orange { background-position:0 -23px;text-shadow:0 0 1px black, 0 0 1px black, 1px 1px 1px black, 1px 1px 1px #000;}
 .flair-white  { background-position:0 -46px;text-shadow:0 0 1px #fb4f14 0 0 1px #fb4f14 1px 1px 1px #fb4f14 1px 1px 1px #fb4f14;color:#000;}
@@ -842,20 +842,39 @@ box-shadow:         0px 3px 2px 0px rgba(50, 50, 50, 1); }
   100%{opacity:1;}
 }
 
+@-moz-keyframes googlyeyes { 0%  { transform: translate3d(0px, 0px, 0px); animation-timing-function: ease-out;} 10% { transform: translate3d(10px, 0px, 0px);animation-timing-function: ease-out;} 20% { transform: translate3d(15px, 5px, 0px); animation-timing-function: ease-out; } 30% { transform: translate3d(5px, 20px, 0px); animation-timing-function: ease-out;} 40% { transform: translate3d(15px, 20px, 0px); animation-timing-function: ease-out;} 50% { transform: translate3d(2px, 0px, 0px); animation-timing-function: ease-out;} 60% { transform: translate3d(10px, 5px, 0px); animation-timing-function: ease-out; } 70% { transform: translate3d(5px, 15px, 0px); animation-timing-function: ease-out;} 80% { transform: translate3d(15px, 5px, 0px); animation-timing-function: ease-out;} 80% { transform: translate3d(10px, 10px, 0px); animation-timing-function: ease-out;} 100% { transform: translate3d(0px, 0px, 0px); animation-timing-function: ease-out; } }
+@keyframes googlyeyes { 0%  { transform: translate3d(0px, 0px, 0px); animation-timing-function: ease-out;} 10% { transform: translate3d(10px, 0px, 0px);animation-timing-function: ease-out;} 20% { transform: translate3d(15px, 5px, 0px); animation-timing-function: ease-out; } 30% { transform: translate3d(5px, 20px, 0px); animation-timing-function: ease-out;} 40% { transform: translate3d(15px, 20px, 0px); animation-timing-function: ease-out;} 50% { transform: translate3d(2px, 0px, 0px); animation-timing-function: ease-out;} 60% { transform: translate3d(10px, 5px, 0px); animation-timing-function: ease-out; } 70% { transform: translate3d(5px, 15px, 0px); animation-timing-function: ease-out;} 80% { transform: translate3d(15px, 5px, 0px); animation-timing-function: ease-out;} 80% { transform: translate3d(10px, 10px, 0px); animation-timing-function: ease-out;} 100% { transform: translate3d(0px, 0px, 0px); animation-timing-function: ease-out; } }
+@-webkit-keyframes googlyeyes { 0%  { transform: translate3d(0px, 0px, 0px); animation-timing-function: ease-out;} 10% { transform: translate3d(10px, 0px, 0px);animation-timing-function: ease-out;} 20% { transform: translate3d(15px, 5px, 0px); animation-timing-function: ease-out; } 30% { transform: translate3d(5px, 20px, 0px); animation-timing-function: ease-out;} 40% { transform: translate3d(15px, 20px, 0px); animation-timing-function: ease-out;} 50% { transform: translate3d(2px, 0px, 0px); animation-timing-function: ease-out;} 60% { transform: translate3d(10px, 5px, 0px); animation-timing-function: ease-out; } 70% { transform: translate3d(5px, 15px, 0px); animation-timing-function: ease-out;} 80% { transform: translate3d(15px, 5px, 0px); animation-timing-function: ease-out;} 80% { transform: translate3d(10px, 10px, 0px); animation-timing-function: ease-out;} 100% { transform: translate3d(0px, 0px, 0px); animation-timing-function: ease-out; } }
+
+a[href="/sidebarpictext"]::before{ position: absolute; top: 215px; right: 21px; content:"WE WON A PRESEASON GAME!"; font-weight: bold; font-size: 18px; color: white; -webkit-animation:flair-pulse 1s infinite; }
+
+a[href="/lefteye"]{ border-radius: 50%; width: 30px;height: 30px; background: white; display: block; position: absolute; top: 328px; right: 165px; background: rgb(255,255,255); background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(193,193,193,1) 100%); background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(193,193,193,1) 100%); background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(193,193,193,1) 100%); background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(193,193,193,1) 100%); background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(193,193,193,1) 100%); }
+a[href="/righteye"]{ border-radius: 50%; width: 30px;height: 30px; background: white; display: block; position: absolute; top: 321px;right: 131px; background: rgb(255,255,255); background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(193,193,193,1) 100%); background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(193,193,193,1) 100%); background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(193,193,193,1) 100%); background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(193,193,193,1) 100%); background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(193,193,193,1) 100%); }
+
+a[href="/leftpupil"]{ border-radius: 50%; width: 10px;height: 10px; background: black; display: block; position: absolute; top: 328px; right: 183px; -webkit-animation:googlyeyes 10s infinite; -moz-animation:googlyeyes 10s infinite; animation:googlyeyes 10s infinite;}
+a[href="/rightpupil"]{ border-radius: 50%; width: 10px;height: 10px; background: black;  display: block; position: absolute; top: 321px; right: 149px; -webkit-animation:googlyeyes 10s infinite; -moz-animation:googlyeyes 10s infinite; animation:googlyeyes 10s infinite;}
+
 
 /*****************************************************
 * HEADER TEXT FOR EDITING (Moved here for easy edits!)
 *****************************************************/
+/* Season score */
+/*
+#header::before { position: absolute; top: 26px; left: 50%; margin-left: 26px; width: 320px; height: 22px; text-align: center; color: #FFF; margin-top: 19px; font-size: 42px;
+  content: "(0-0-0)"!important;
+}
+*/
+
 /* Preseason game text */
 #header-bottom-left::after {color: white; position: absolute;top: 50px; left: 50%; width: 320px!important; height: 21px!important; margin-left: -435px; z-index: 99; background-color: transparent; background-image: none!important; font-size: 13px; line-height: 18px; text-align: center; 
 
     content: "Next Preseason Game:"!important;
 
-    }
+}
 
 /* HEADER GAME DATE AND TIME ANNOUNCEMENT */
 #header-bottom-left::before {position:absolute;top:53px;left:50%;margin-left:-438px;width:320px;height:22px;text-align: center;color:#FFF; margin-top:19px;font-size:16px;-webkit-animation:rubberBand 2s 1;-moz-animation:rubberBand 2s 1;animation:rubberBand 2s 1; -webkit-animation-delay: 2s; animation-delay: 2s; text-shadow:0 2px 2px rgba(0,0,0,1); 
 
     content: "Thu, Aug 7 @ Kansas City - 8:00PM ET";
 
-    }
+}
