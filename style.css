@@ -15,7 +15,7 @@
 .side                       { padding-right:-5px;background-image:url(%%jones%%);/*change image here*/background-repeat:no-repeat;}
 .side .spacer:first-of-type { position:relative;}
 /*Text underneath: */
-.side .spacer:first-of-type:after { position:absolute;bottom:59px;/*move rest of sidebar and update text content first before positioning text here.*/width:296px;font-size:120%;left:0;text-align:center;color:#FFF;padding:2px;background:#000;opacity:.7;content:'Marvin Jones breaks foot - out for "a few games" :(';}
+.side .spacer:first-of-type:after { position:absolute;bottom:59px;/*move rest of sidebar and update text content first before positioning text here.*/width:296px;font-size:120%;left:0;text-align:center;color:#FFF;padding:2px;background:#000;opacity:.7;content:'Marvin Jones breaks foot - out for several weeks :(';}
 
 /* Sidebar */
 .side{float:right;margin:50px 10px 0 0;padding-top:335px;/*SIDEBAR: CHANGE TO image height in pixels*/width:300px;text-align:left;font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;}
@@ -879,7 +879,6 @@ a[href="/mouth"]{
   animation:         mouth 1s infinite;
 }
 
-
 /*****************************************************
 * HEADER TEXT FOR EDITING (Moved here for easy edits!)
 *****************************************************/
@@ -900,6 +899,6 @@ a[href="/mouth"]{
 /* HEADER GAME DATE AND TIME ANNOUNCEMENT */
 #header-bottom-left::before {position:absolute;top:53px;left:50%;margin-left:-438px;width:320px;height:22px;text-align: center;color:#FFF; margin-top:19px;font-size:16px;-webkit-animation:rubberBand 2s 1;-moz-animation:rubberBand 2s 1;animation:rubberBand 2s 1; -webkit-animation-delay: 2s; animation-delay: 2s; text-shadow:0 2px 2px rgba(0,0,0,1); 
 
-    content: "Sat, Aug 8/16 vs Jets - 7:00PM ET";
+    content: "Sun, Aug 8/24 vs Cardinals - 8:00PM ET";
 
 }
